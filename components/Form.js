@@ -93,16 +93,12 @@ const Member1Details = ({ teamProps, setTeamProps }) => {
         </div>
         <div className="lg:ml-auto w-full lg:max-w-[300px] mt-5 lg:mt-0">
           <Input
-            value={teamProps.teamName}
-            onChange={(e) =>
-              setTeamProps({ ...teamProps, teamName: e.target.value })
-            }
             radius="sm"
             classNames={{
               input: "pl-3",
               label: "pl-3",
             }}
-            label="Team name"
+            label="Member name"
           />
         </div>
       </div>
@@ -123,7 +119,7 @@ const Member1Details = ({ teamProps, setTeamProps }) => {
               input: "pl-3",
               label: "pl-3",
             }}
-            label="Team name"
+            label="Member roll number"
           />
         </div>
       </div>
@@ -144,7 +140,7 @@ const Member1Details = ({ teamProps, setTeamProps }) => {
               input: "pl-3",
               label: "pl-3",
             }}
-            label="Team name"
+            label="KIIT email address"
           />
         </div>
       </div>
@@ -165,7 +161,7 @@ const Member1Details = ({ teamProps, setTeamProps }) => {
               input: "pl-3",
               label: "pl-3",
             }}
-            label="Team name"
+            label="Phone number"
           />
         </div>
       </div>
