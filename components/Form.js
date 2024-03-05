@@ -24,20 +24,20 @@ function Form() {
   const [isLoading, setIsLoading] = React.useState(false);
 
   const [formProps, setFormProps] = React.useState({
-    teamName: "Metal",
-    arena: "Webnest",
+    teamName: "",
+    arena: "",
     totalParicipants: 0,
     member1: {
-      name: "Priyangsu Banerjee",
-      roll: "22052490",
-      email: "22052490@kiit.ac.in",
-      phone: "9647045453",
+      name: "",
+      roll: "",
+      email: "",
+      phone: "",
     },
     member2: {
-      name: "Anmol Singh",
-      roll: "22052828",
-      email: "22052828@kiit.ac.in",
-      phone: "7735592041",
+      name: "",
+      roll: "",
+      email: "",
+      phone: "",
     },
     member3: {
       name: "",
