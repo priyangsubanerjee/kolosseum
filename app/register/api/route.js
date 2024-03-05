@@ -38,8 +38,20 @@ export async function POST(request) {
       process.env.ZOHO_MAIL,
       process.env.ZOHO_PASS,
       emails,
-      "Team Registered Successfully",
-      `Your team has been registered successfully for the event. Your team id is ${pid}. Please use this id for further communication.`
+      `Registration Confirmed - ${teamname}``
+        <!DOCTYPE html>
+        <html lang="en">
+            <body>
+            <p>Dear prticipant,</p>
+            <p>This email confirms the successful registration of team <strong>${teamname}</strong> (Team ID: ${pid}) for the <strong>Kolesseum</strong> taking place on <strong>17th march, 2024.</strong>.</p> <br/><br/>
+            <p>We are pleased to have you participate and look forward to a successful event. Please keep this Team ID (Team ID: ${pid}) for any further communication regarding the event.</p> <br/><br/>
+            <p>We will be in touch soon with any additional information.</p>
+            <p>Thank you,</p>
+            <p>[Your Name/Team Representative Name]</p>
+            </body>
+        </html>
+
+      `
     );
   }
 
