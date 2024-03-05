@@ -78,7 +78,7 @@ export async function POST(request) {
       We will be in touch soon with any additional information.
     </p>
     <p style="margin-top: 100px">Thank you,</p>
-    <p>Priyangsu Banerjee (Lead)</p>
+    <p>Team Konnexions</p>
   </body>
 </html>
 
