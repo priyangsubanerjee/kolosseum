@@ -362,125 +362,141 @@ const Member2Details = ({ teamProps, setTeamProps }) => {
   );
 };
 
-const Member3Details = () => {
+const Member3Details = ({ teamProps, setTeamProps }) => {
   return (
-    <div className="px-10 mt-5">
-      <div className="dark flex items-center text-white bg-black/10 rounded-md p-4">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
-          className=" shrink-0"
-          viewBox="0 0 24 24"
-        >
-          <path
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-width="1"
-            d="M12 3C7.749 3 5.623 3 4.303 4.318C3.298 5.321 3.058 6.788 3 9.3m18 0c-.058-2.512-.298-3.98-1.303-4.982c-.818-.817-1.946-1.127-3.697-1.246M21 14.7c-.058 2.512-.298 3.98-1.303 4.982C18.377 21 16.251 21 12 21c-4.251 0-6.377 0-7.697-1.318C3.298 18.679 3.058 17.212 3 14.7M8 8h8m-4 8V8m10 4h-2M4 12H2"
-          />
-        </svg>
-        <h2 className="text-base ml-4 shrink-0 font-medium text-white">
-          Member name
-        </h2>
-        <div className="ml-auto">
+    <div className="px-2 lg:px-10 mt-5 space-y-8">
+      <div className="dark lg:flex items-center rounded-md px-4 text-neutral-200">
+        <div className="flex items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 15 15"
+          >
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M7.5.875a3.625 3.625 0 0 0-1.006 7.109c-1.194.145-2.218.567-2.99 1.328c-.982.967-1.479 2.408-1.479 4.288a.475.475 0 1 0 .95 0c0-1.72.453-2.88 1.196-3.612c.744-.733 1.856-1.113 3.329-1.113s2.585.38 3.33 1.113c.742.733 1.195 1.892 1.195 3.612a.475.475 0 1 0 .95 0c0-1.88-.497-3.32-1.48-4.288c-.77-.76-1.795-1.183-2.989-1.328A3.627 3.627 0 0 0 7.5.875M4.825 4.5a2.675 2.675 0 1 1 5.35 0a2.675 2.675 0 0 1-5.35 0"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <h2 className="text-sm ml-3 shrink-0 font-normal tracking-wide">
+            Member name
+          </h2>
+        </div>
+        <div className="lg:ml-auto w-full lg:max-w-[330px] mt-5 lg:mt-0">
           <Input
-            className="w-[350px]"
             radius="sm"
             classNames={{
               input: "pl-3",
               label: "pl-3",
             }}
-            label="Team name"
+            label="Member name"
           />
         </div>
       </div>
-      <div className="dark flex items-center text-white bg-black/10 rounded-md p-4 mt-2">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
-          viewBox="0 0 16 16"
-        >
-          <path
-            fill="currentColor"
-            d="M4 5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0v-5A.5.5 0 0 1 4 5M3 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM2 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm9.5 1a.5.5 0 0 0 0 1h.5v1.5h-.5a.5.5 0 0 0-.5.5v2.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 0-1H12V8.5h.5A.5.5 0 0 0 13 8V5.5a.5.5 0 0 0-.5-.5zM11 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm-1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z"
-          />
-        </svg>
-        <h2 className="text-base ml-4 shrink-0 font-medium text-white">
-          Roll number
-        </h2>
-        <div className="ml-auto">
+      <div className="dark lg:flex items-center text-white rounded-md px-4">
+        <div className="flex items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 8V6a2 2 0 0 1 2-2h2M4 16v2a2 2 0 0 0 2 2h2m8-16h2a2 2 0 0 1 2 2v2m-4 12h2a2 2 0 0 0 2-2v-2M9 10h.01M15 10h.01M9.5 15a3.5 3.5 0 0 0 5 0"
+            />
+          </svg>
+          <h2 className="text-sm ml-3 shrink-0 font-normal text-white">
+            Roll number
+          </h2>
+        </div>
+        <div className="lg:ml-auto w-full lg:max-w-[330px] mt-5 lg:mt-0">
           <Input
-            className="w-[350px]"
+            value={teamProps.teamName}
+            onChange={(e) =>
+              setTeamProps({ ...teamProps, teamName: e.target.value })
+            }
             radius="sm"
             classNames={{
               input: "pl-3",
               label: "pl-3",
             }}
-            label="Team name"
+            label="Member roll number"
           />
         </div>
       </div>
-      <div className="dark flex items-center text-white bg-black/10 rounded-md p-4 mt-2">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
-          viewBox="0 0 36 36"
-        >
-          <path
-            fill="currentColor"
-            d="M33.68 15.26H32v11.45l-7.36-7.36l-1.41 1.41L30.46 28H5.66l7-7.24l-1.44-1.39L4 26.84V9.52l12.43 12.37a2 2 0 0 0 2.82 0l6.66-6.63h-2.83l-5.24 5.21L5.31 8h14.75l1.15-2H4a2 2 0 0 0-2 2v20a2 2 0 0 0 2 2h28a2 2 0 0 0 2-2V15.24Z"
-            class="clr-i-outline--alerted clr-i-outline-path-1--alerted"
-          />
-          <path
-            fill="currentColor"
-            d="m26.85 1l-5.72 9.91a1.28 1.28 0 0 0 1.1 1.91h11.45a1.28 1.28 0 0 0 1.1-1.91L29.06 1a1.28 1.28 0 0 0-2.21 0"
-            class="clr-i-outline--alerted clr-i-outline-path-2--alerted clr-i-alert"
-          />
-          <path fill="none" d="M0 0h36v36H0z" />
-        </svg>
-        <h2 className="text-base ml-4 shrink-0 font-medium text-white">
-          Email address
-        </h2>
-        <div className="ml-auto">
+      <div className="dark lg:flex items-center text-white rounded-md px-4">
+        <div className="flex items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            strokeWidth={2}
+          >
+            <g fill="none" stroke="currentColor" stroke-width="1">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m7 9l5 3.5L17 9"
+              />
+              <path d="M2 17V7a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2Z" />
+            </g>
+          </svg>
+          <h2 className="text-sm ml-3 shrink-0 tracking-wide text-white">
+            Email address
+          </h2>
+        </div>
+        <div className="lg:ml-auto w-full lg:max-w-[330px] mt-5 lg:mt-0">
           <Input
-            className="w-[350px]"
+            value={teamProps.teamName}
+            onChange={(e) =>
+              setTeamProps({ ...teamProps, teamName: e.target.value })
+            }
             radius="sm"
             classNames={{
               input: "pl-3",
               label: "pl-3",
             }}
-            label="Team name"
+            label="KIIT email address"
           />
         </div>
       </div>
-      <div className="dark flex items-center text-white bg-black/10 rounded-md p-4 mt-2">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="28"
-          height="28"
-          viewBox="0 0 16 16"
-        >
-          <path
-            fill="currentColor"
-            d="M3.714 5.258C3.523 4 4.41 2.87 5.765 2.456a.988.988 0 0 1 1.214.598l.435 1.16a1 1 0 0 1-.26 1.088L5.86 6.487a.501.501 0 0 0-.152.47l.012.052l.031.13a7.265 7.265 0 0 0 .729 1.805a7.264 7.264 0 0 0 1.296 1.627l.04.036a.5.5 0 0 0 .482.103l1.673-.527a1 1 0 0 1 1.072.319l.792.961c.33.4.29.988-.089 1.341c-1.037.967-2.463 1.165-3.455.368a12.732 12.732 0 0 1-3.024-3.529a12.432 12.432 0 0 1-1.554-4.385m3.043 1.765l1.072-.984a2 2 0 0 0 .521-2.176l-.434-1.16A1.988 1.988 0 0 0 5.473 1.5c-1.683.515-3.034 2.024-2.748 3.909c.2 1.316.661 2.99 1.678 4.738a13.732 13.732 0 0 0 3.262 3.805c1.488 1.195 3.474.787 4.764-.415a1.98 1.98 0 0 0 .179-2.708l-.792-.962a2 2 0 0 0-2.144-.636l-1.389.437a6.604 6.604 0 0 1-.936-1.223a6.268 6.268 0 0 1-.59-1.421"
-          />
-        </svg>
-        <h2 className="text-base ml-4 shrink-0 font-medium text-white">
-          Phone number
-        </h2>
-        <div className="ml-auto">
+      <div className="dark lg:flex items-center text-white rounded-md px-4">
+        <div className="flex items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m16.1 13.359l-.528-.532zm.456-.453l.529.532zm2.417-.317l-.358.66zm1.91 1.039l-.358.659zm.539 3.255l.529.532zm-1.42 1.412l-.53-.531zm-1.326.67l.07.747zm-9.86-4.238l.528-.532zM4.002 5.746l-.749.042zm6.474 1.451l.53.532zm.157-2.654l.6-.449zM9.374 2.86l-.601.45zM6.26 2.575l.53.532zm-1.57 1.56l-.528-.531zm7.372 7.362l.529-.532zm4.567 2.394l.455-.453l-1.058-1.064l-.455.453zm1.985-.643l1.91 1.039l.716-1.318l-1.91-1.038zm2.278 3.103l-1.42 1.413l1.057 1.063l1.42-1.412zm-2.286 1.867c-1.45.136-5.201.015-9.263-4.023l-1.057 1.063c4.432 4.407 8.65 4.623 10.459 4.454zm-9.263-4.023c-3.871-3.85-4.512-7.087-4.592-8.492l-1.498.085c.1 1.768.895 5.356 5.033 9.47zm1.376-6.18l.286-.286L9.95 6.666l-.287.285zm.515-3.921L9.974 2.41l-1.201.899l1.26 1.684zM5.733 2.043l-1.57 1.56l1.058 1.064l1.57-1.56zm4.458 5.44c-.53-.532-.53-.532-.53-.53h-.002l-.003.004a1.064 1.064 0 0 0-.127.157c-.054.08-.113.185-.163.318a2.099 2.099 0 0 0-.088 1.071c.134.865.73 2.008 2.256 3.526l1.058-1.064c-1.429-1.42-1.769-2.284-1.832-2.692c-.03-.194.001-.29.01-.312c.005-.014.007-.015 0-.006a.276.276 0 0 1-.03.039l-.01.01a.203.203 0 0 1-.01.009zm1.343 4.546c1.527 1.518 2.676 2.11 3.542 2.242c.443.068.8.014 1.071-.087a1.536 1.536 0 0 0 .42-.236a.923.923 0 0 0 .05-.045l.007-.006l.003-.003l.001-.002s.002-.001-.527-.533c-.53-.532-.528-.533-.528-.533l.002-.002l.002-.002l.006-.005l.01-.01a.383.383 0 0 1 .038-.03c.01-.007.007-.004-.007.002c-.025.009-.123.04-.32.01c-.414-.064-1.284-.404-2.712-1.824zm-1.56-9.62C8.954 1.049 6.95.834 5.733 2.044L6.79 3.107c.532-.529 1.476-.475 1.983.202zM4.752 5.704c-.02-.346.139-.708.469-1.036L4.163 3.604c-.537.534-.96 1.29-.909 2.184zm14.72 12.06c-.274.274-.57.428-.865.455l.139 1.494c.735-.069 1.336-.44 1.784-.885zM11.006 7.73c.985-.979 1.058-2.527.229-3.635l-1.201.899c.403.539.343 1.246-.085 1.673zm9.52 6.558c.817.444.944 1.49.367 2.064l1.058 1.064c1.34-1.333.927-3.557-.71-4.446zm-3.441-.849c.384-.382 1.002-.476 1.53-.19l.716-1.317c-1.084-.59-2.428-.427-3.304.443z"
+            />
+          </svg>
+          <h2 className="text-sm ml-3 shrink-0 tracking-wide text-white">
+            Phone number
+          </h2>
+        </div>
+        <div className="lg:ml-auto w-full lg:max-w-[330px] mt-5 lg:mt-0">
           <Input
-            className="w-[350px]"
+            value={teamProps.teamName}
+            onChange={(e) =>
+              setTeamProps({ ...teamProps, teamName: e.target.value })
+            }
             radius="sm"
             classNames={{
               input: "pl-3",
               label: "pl-3",
             }}
-            label="Team name"
+            label="Phone number"
           />
         </div>
       </div>
