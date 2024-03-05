@@ -16,7 +16,7 @@ function Form() {
     "Member 3 (optional)",
     "Review",
   ];
-  const [step, setStep] = React.useState(0);
+  const [step, setStep] = React.useState(4);
 
   return (
     <div className="w-full h-fit bg-white md:bg-white rounded-lg px-6 py-16 md:p-10 border-t border-dashed md:border-none">
