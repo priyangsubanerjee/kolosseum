@@ -22,7 +22,7 @@ export default function Home() {
             />
           </div>
           <div className="px-6 mt-6">
-            <h1 className="text-white text-3xl lg:text-4xl font-jost font-semibold">
+            <h1 className="text-white text-4xl lg:text-4xl font-jost font-semibold">
               Kolesseum
             </h1>
             <p className="text-neutral-200 mt-3 text-sm leading-7">
