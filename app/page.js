@@ -19,7 +19,7 @@ export default function Home() {
       />
 
       <div className="absolute inset-0 h-full w-full lg:flex justify-center lg:p-10">
-        <div className="w-full lg:min-h-0 h-[calc(100vh-80px)] lg:w-[430px] shrink-0 flex flex-col lg:h-full bg-black/0 backdrop-blur-xl overflow-hidden lg:rounded-l-xl relative">
+        <div className="w-full lg:min-h-0 h-fit pb-10 md:pb-0 lg:w-[430px] shrink-0 flex flex-col lg:h-full bg-black/0 backdrop-blur-xl overflow-hidden lg:rounded-l-xl relative">
           <div className="py-4 px-4 flex justify-between">
             <div>
               {" "}
