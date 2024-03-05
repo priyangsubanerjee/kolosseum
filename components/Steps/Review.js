@@ -15,7 +15,9 @@ function Review({ formProps }) {
         </div>
         <div className="">
           <p className="text-sm text-neutral-500">Team members</p>
-          <p className="text-base font-medium mt-3">02</p>
+          <p className="text-base font-medium mt-3">
+            {formProps.totalParicipants}
+          </p>
         </div>
       </div>
     </div>

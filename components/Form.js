@@ -22,6 +22,7 @@ function Form() {
   const [formProps, setFormProps] = React.useState({
     teamName: "",
     arena: "",
+    totalParicipants: 0,
     member1: {
       name: "",
       roll: "",
@@ -79,6 +80,10 @@ function Form() {
           return;
         } else {
           setStep((s) => s + 1);
+          setFormProps({
+            ...formProps,
+            totalParicipants: 1,
+          });
         }
         break;
       case 2:
@@ -105,6 +110,10 @@ function Form() {
           return;
         } else {
           setStep((s) => s + 1);
+          setFormProps({
+            ...formProps,
+            totalParicipants: 2,
+          });
         }
         break;
       case 3:
@@ -137,11 +146,48 @@ function Form() {
             return;
           } else {
             setStep((s) => s + 1);
+            setFormProps({
+              ...formProps,
+              totalParicipants: 3,
+            });
           }
         } else {
           setStep((s) => s + 1);
+          setFormProps({
+            ...formProps,
+            totalParicipants: 2,
+          });
         }
         break;
+
+      case 4:
+        if (
+          formProps.member1.email === formProps.member2.email ||
+          formProps.member1.email === formProps.member3.email ||
+          formProps.member2.email === formProps.member3.email
+        ) {
+          toast.error("Emails should be unique");
+          setStep(1);
+          return;
+        } else if (
+          formProps.member1.roll === formProps.member2.roll ||
+          formProps.member1.roll === formProps.member3.roll ||
+          formProps.member2.roll === formProps.member3.roll
+        ) {
+          toast.error("Roll numbers should be unique");
+          setStep(1);
+          return;
+        } else if (
+          formProps.member1.phone === formProps.member2.phone ||
+          formProps.member1.phone === formProps.member3.phone ||
+          formProps.member2.phone === formProps.member3.phone
+        ) {
+          toast.error("Phone numbers should be unique");
+          setStep(1);
+          return;
+        } else {
+          console.log(formProps);
+        }
     }
   };
 

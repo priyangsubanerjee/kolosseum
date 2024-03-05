@@ -26,11 +26,11 @@ function Teamname({ formProps, setFormProps }) {
         label="Select arena"
         className="w-full"
       >
-        <SelectItem value="option1" key="option1">
-          Option 1
+        <SelectItem value="Webnest" key="Webnest">
+          Webnest
         </SelectItem>
-        <SelectItem value="option2" key="option2">
-          Option 2
+        <SelectItem value="Kognizance" key="Kognizance">
+          Kognizance
         </SelectItem>
         <SelectItem value="option3" key="option3">
           Option 3
