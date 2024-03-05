@@ -1,25 +1,41 @@
-import { Input } from "@nextui-org/react";
+import { Input, Select, SelectItem } from "@nextui-org/react";
 import React from "react";
 
-function Teamname() {
+function Teamname({ formProps, setFormProps }) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
       <Input
         label="Team name *"
+        value={formProps.teamName}
+        onChange={(e) =>
+          setFormProps({ ...formProps, teamName: e.target.value })
+        }
         required
         classNames={{
           input: "pl-3",
           label: "pl-3",
         }}
       />
-      <Input
-        label="Team name *"
-        required
+      <Select
+        selectedKeys={[formProps.arena]}
+        onChange={(e) => setFormProps({ ...formProps, arena: e.target.value })}
         classNames={{
-          input: "pl-3",
+          value: "pl-3",
           label: "pl-3",
         }}
-      />
+        label="Select arena"
+        className="w-full"
+      >
+        <SelectItem value="option1" key="option1">
+          Option 1
+        </SelectItem>
+        <SelectItem value="option2" key="option2">
+          Option 2
+        </SelectItem>
+        <SelectItem value="option3" key="option3">
+          Option 3
+        </SelectItem>
+      </Select>
     </div>
   );
 }

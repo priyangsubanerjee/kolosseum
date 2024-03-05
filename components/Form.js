@@ -1,7 +1,7 @@
 "use client";
 
 import { Button, Input } from "@nextui-org/react";
-import React from "react";
+import React, { useEffect } from "react";
 import Teamname from "./Steps/Teamname";
 import Member1 from "./Steps/Member1";
 import Member2 from "./Steps/Member2";
@@ -16,7 +16,34 @@ function Form() {
     "Member 3 (optional)",
     "Review",
   ];
-  const [step, setStep] = React.useState(4);
+  const [step, setStep] = React.useState(0);
+
+  const [formProps, setFormProps] = React.useState({
+    teamName: "",
+    arena: "",
+    member1: {
+      name: "",
+      roll: "",
+      email: "",
+      phone: "",
+    },
+    member2: {
+      name: "",
+      roll: "",
+      email: "",
+      phone: "",
+    },
+    member3: {
+      name: "",
+      roll: "",
+      email: "",
+      phone: "",
+    },
+  });
+
+  useEffect(() => {
+    console.log(formProps);
+  }, [formProps]);
 
   return (
     <div className="w-full h-fit bg-white md:bg-white rounded-lg px-6 py-16 md:p-10 border-t border-dashed md:border-none">
@@ -36,6 +63,21 @@ function Form() {
         <h1 className="text-2xl md:text-2xl font-light ml-2">
           <span className=" font-semibold">Team</span> registration
         </h1>
+
+        <button className="text-sm ml-auto text-neutral-700 hover:underline flex items-center space-x-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 32 32"
+          >
+            <path
+              fill="currentColor"
+              d="M16 13a1 1 0 0 1 1 1v9a1 1 0 1 1-2 0v-9a1 1 0 0 1 1-1m0-2a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3M2 16C2 8.268 8.268 2 16 2s14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16M16 4C9.373 4 4 9.373 4 16s5.373 12 12 12s12-5.373 12-12S22.627 4 16 4"
+            />
+          </svg>
+          <span className="hidden md:block">Docs</span>
+        </button>
       </div>
       <div className="flex items-center mt-4 space-x-2">
         <span className="bg-neutral-50 py-2 text-xs px-4 rounded-full">
@@ -72,15 +114,15 @@ function Form() {
       </div>
       <div className="mt-5">
         {step === 0 ? (
-          <Teamname />
+          <Teamname formProps={formProps} setFormProps={setFormProps} />
         ) : step === 1 ? (
-          <Member1 />
+          <Member1 formProps={formProps} setFormProps={setFormProps} />
         ) : step === 2 ? (
-          <Member2 />
+          <Member2 formProps={formProps} setFormProps={setFormProps} />
         ) : step === 3 ? (
-          <Member3 />
+          <Member3 formProps={formProps} setFormProps={setFormProps} />
         ) : step === 4 ? (
-          <Review />
+          <Review formProps={formProps} setFormProps={setFormProps} />
         ) : null}
       </div>
       <div className="flex items-center justify-between mt-12">
