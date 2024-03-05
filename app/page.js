@@ -13,7 +13,7 @@ export default function Home() {
       />
 
       <div className="absolute inset-0 h-full w-full lg:flex justify-center lg:p-10">
-        <div className="w-full lg:w-[430px] shrink-0 flex flex-col lg:h-full bg-white/20 lg:border lg:border-white/20 backdrop-blur-2xl overflow-hidden lg:rounded-l-xl relative">
+        <div className="w-full lg:w-[430px] shrink-0 flex flex-col lg:h-full bg-black/20 md:bg-white/20 lg:border lg:border-white/20 backdrop-blur-2xl overflow-hidden lg:rounded-l-xl relative">
           <div className="p-3">
             <img
               src="https://techcrunch.com/wp-content/uploads/2023/06/IMG_0058.jpeg"
@@ -163,7 +163,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="w-full max-w-[650px] bg-white/30 backdrop-blur-xl -translate-x-[1px] min-h-screen lg:min-h-0 lg:h-full pb-16 lg:rounded-r-xl">
+        <div className="w-full max-w-[650px] bg-neutral-900 md:bg-white/30 backdrop-blur-xl -translate-x-[1px] min-h-screen lg:min-h-0 lg:h-full pb-16 lg:rounded-r-xl">
           <Form />
         </div>
       </div>
