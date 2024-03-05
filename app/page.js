@@ -43,7 +43,7 @@ export const metadata = {
 export default function Home() {
   return (
     <main className="min-h-screen h-fit bg-neutral-100">
-      <div className="md:flex h-fit lg:p-8 md:space-x-6">
+      <div className="lg:flex h-fit lg:p-8 lg:space-x-6">
         <Eventdetails />
         <Form />
       </div>

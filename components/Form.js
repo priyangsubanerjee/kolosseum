@@ -1,5 +1,4 @@
 "use client";
-
 import { Button, Input, Spacer } from "@nextui-org/react";
 import React, { useEffect } from "react";
 import Teamname from "./Steps/Teamname";
@@ -8,6 +7,7 @@ import Member2 from "./Steps/Member2";
 import Member3 from "./Steps/Member3";
 import Review from "./Steps/Review";
 import toast from "react-hot-toast";
+import axios from "axios";
 
 function Form() {
   const stepLabels = [
@@ -20,20 +20,20 @@ function Form() {
   const [step, setStep] = React.useState(0);
 
   const [formProps, setFormProps] = React.useState({
-    teamName: "",
-    arena: "",
+    teamName: "Metal",
+    arena: "Webnest",
     totalParicipants: 0,
     member1: {
-      name: "",
-      roll: "",
-      email: "",
-      phone: "",
+      name: "Priyangsu Banerjee",
+      roll: "22052490",
+      email: "22052490@kiit.ac.in",
+      phone: "9647045453",
     },
     member2: {
-      name: "",
-      roll: "",
-      email: "",
-      phone: "",
+      name: "Anmol Singh",
+      roll: "22052828",
+      email: "22052828@kiit.ac.in",
+      phone: "7735592041",
     },
     member3: {
       name: "",
@@ -43,7 +43,7 @@ function Form() {
     },
   });
 
-  const handleProgress = () => {
+  const handleProgress = async () => {
     switch (step) {
       case 0:
         if (formProps.teamName === "") {
@@ -195,13 +195,26 @@ function Form() {
           setStep(1);
           return;
         } else {
-          console.log(formProps);
+          toast.loading("Submitting...");
+          let registerRequest = await axios.post("/register/api", formProps, {
+            headers: {
+              "Content-Type": "application/json",
+            },
+          });
+          if (registerRequest.data.success) {
+            alert(registerRequest.data.pid);
+            toast.success("Registered successfully");
+          } else {
+            toast.error("Failed to register");
+          }
+
+          toast.dismiss();
         }
     }
   };
 
   return (
-    <div className="w-full h-full md:h-fit bg-white md:bg-white rounded-lg px-6 py-16 md:p-10 border-t border-dashed md:border-none">
+    <div className="w-full md:w-full h-full md:h-fit bg-white md:bg-white lg:rounded-lg px-6 py-16 md:p-10 border-t border-dashed lg:border-none">
       <div className="flex items-center">
         <svg
           className="h-10 w-10 lg:h-12 lg:w-12"
