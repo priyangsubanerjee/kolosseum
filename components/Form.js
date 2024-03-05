@@ -602,8 +602,9 @@ function Form() {
       />
       <div className="flex items-center justify-between mt-20 px-5 lg:px-10">
         <button
-          disabled
-          className="text-base disabled:opacity-50 disabled:cursor-not-allowed text-neutral-100 hover:underline"
+          disabled={currentStep === 0}
+          onClick={() => setCurrentStep((prev) => prev - 1)}
+          className="text-base disabled:opacity-50 disabled:cursor-not-allowed text-neutral-300 hover:underline"
         >
           Back
         </button>
