@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Button } from "@nextui-org/react";
 import React from "react";
 
@@ -86,7 +87,7 @@ function Eventdetails() {
             <p className="text-sm ml-2">Campus 14, KIIT University</p>
           </div>
         </div>
-        <div className="mt-16 flex justify-between">
+        <div className="mt-16 mb-10 md:mb-0 flex justify-between">
           <button className="text-neutral-900 hover:underline text-sm flex items-center space-x-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
