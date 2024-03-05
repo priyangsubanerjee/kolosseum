@@ -1,8 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
+"use client";
 import { Button } from "@nextui-org/react";
-import React from "react";
+import React, { useState } from "react";
 
 function Eventdetails() {
+  const [contactOptionsOpen, setContactOptionsOpen] = useState(false);
   return (
     <div className="w-full lg:max-w-[400px] shrink-0">
       <div className="h-fit p-5 rounded-lg bg-white">

@@ -16,9 +16,7 @@ export const metadata = {
   title: "Ultimate hackathon, Kolosseum - Konnexions",
   description:
     "Gear up! Konnexions is back with the ultimate hackathon, Kolosseum. Brace yourself for an exhilarating journey of problem-solving, collaboration, and cutting-edge development. Whether you're a coding maestro or a budding genius, this is your chance to showcase your talent and make waves in the digital realm. Don't let this opportunity slip through your fingertips! Secure your spot now —register fast!",
-  icons: {
-    icon: "/icon.png",
-  },
+  icons: {},
   openGraph: {
     title: "Code. Collaborate. Conquer | Kolosseum",
     description:
