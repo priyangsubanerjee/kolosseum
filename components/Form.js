@@ -2,7 +2,7 @@ import React from "react";
 
 function Form() {
   return (
-    <div className="w-full h-fit bg-neutral-50 md:bg-white rounded-lg px-6 py-16 md:p-10">
+    <div className="w-full h-fit bg-white md:bg-white rounded-lg px-6 py-16 md:p-10 border-t border-dashed">
       <div className="flex items-center">
         <svg
           className="h-8 w-8 lg:h-12 lg:w-12"
@@ -21,18 +21,23 @@ function Form() {
         </h1>
       </div>
       <div className="flex items-center mt-4 space-x-2">
-        <span className="bg-white md:bg-neutral-50 py-2 text-sm px-4 rounded-full">
+        <span className="bg-neutral-50 py-2 text-xs px-4 rounded-full">
           Closing in 3 days
         </span>
-        <span className="bg-sky-50 py-2 text-sm px-4 rounded-full">
+        <span className="bg-sky-50 py-2 text-xs px-4 rounded-full">
           16 teams registered
         </span>
       </div>
 
       <div className="flex items-center justify-center mt-10">
-        {[1, 2, 3, 4].map((i) => (
+        {[1, 2, 3, 4].map((i, index) => (
           <div key={i} className="flex items-center">
-            <div className="flex items-center justify-center rounded-full bg-neutral-100 h-12 w-12">
+            <div
+              style={{
+                background: index == 0 && "rgb(217 249 157)",
+              }}
+              className="flex items-center justify-center rounded-full bg-neutral-100 h-12 w-12"
+            >
               <p>{i}</p>
             </div>
             {i !== 4 && <div className="w-[40px] h-[1px] bg-neutral-200"></div>}
