@@ -2,6 +2,7 @@
 import Form from "@/components/Form";
 import { Button } from "@nextui-org/react";
 import Image from "next/image";
+import Link from "next/link";
 
 export const viewport = {
   width: "device-width",
@@ -19,10 +20,9 @@ export default function Home() {
       />
 
       <div className="absolute inset-0 h-full w-full lg:flex justify-center lg:p-10">
-        <div className="w-full lg:min-h-0 h-fit pb-5 md:pb-0 lg:w-[430px] shrink-0 flex flex-col lg:h-full bg-black/10 backdrop-blur-xl overflow-hidden lg:rounded-l-xl relative">
+        <div className="w-full md:mx-auto lg:mx-0 lg:min-h-0 h-fit pb-5 md:pb-8 lg:pb-0 md:w-[700px] lg:w-[430px] shrink-0 flex flex-col lg:h-full bg-black/10 backdrop-blur-xl overflow-hidden lg:rounded-l-xl relative">
           <div className="py-4 px-4 flex justify-between">
             <div>
-              {" "}
               <button className="text-neutral-300 hover:underline text-sm flex items-center space-x-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@ export default function Home() {
             <img
               src="https://techcrunch.com/wp-content/uploads/2023/06/IMG_0058.jpeg"
               alt=""
-              className="md:rounded-lg h-[250px] object-cover"
+              className="md:rounded-lg h-[250px] w-full object-cover"
             />
           </div>
           <div className="px-6 mt-6">
@@ -183,9 +183,69 @@ export default function Home() {
                 </svg>
               </div>
             </Button>
+            <div className="hidden lg:flex items-center justify-center mt-14 text-neutral-200">
+              <Link
+                class="md:ml-10"
+                href={"https://www.instagram.com/sanjayarora"}
+              >
+                <button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                  >
+                    <g fill="none" stroke="currentColor" stroke-width="1">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 16a4 4 0 1 0 0-8a4 4 0 0 0 0 8"
+                      ></path>
+                      <path d="M3 16V8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5Z"></path>
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m17.5 6.51l.01-.011"
+                      ></path>
+                    </g>
+                  </svg>
+                </button>
+              </Link>
+              <Link class="ml-6" href={"https://www.facebook.com/"}>
+                <button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      fill-rule="evenodd"
+                      d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16c24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31"
+                    ></path>
+                  </svg>
+                </button>
+              </Link>
+              <Link href={"https://www.linkedin.com/"}>
+                <button class="ml-6">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z"
+                    ></path>
+                  </svg>
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
-        <div className="w-full max-w-[650px] bg-neutral-900 backdrop-blur-xl -translate-x-[1px] min-h-screen lg:min-h-0 lg:h-full pb-16 lg:rounded-r-xl">
+        <div className="w-full md:mx-auto md:max-w-[700px] lg:mx-0 lg:max-w-[650px] bg-neutral-900 backdrop-blur-xl lg:-translate-x-[1px] min-h-screen md:min-h-0 lg:min-h-0 lg:h-full pb-16 lg:rounded-r-xl px-0 md:px-10 lg:px-0">
           <Form />
         </div>
       </div>
