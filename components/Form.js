@@ -1,11 +1,14 @@
+import { Button, Input } from "@nextui-org/react";
 import React from "react";
+import Teamname from "./Steps/Teamname";
+import Member1 from "./Steps/Member1";
 
 function Form() {
   return (
-    <div className="w-full h-fit bg-white md:bg-white rounded-lg px-6 py-16 md:p-10 border-t border-dashed">
+    <div className="w-full h-fit bg-white md:bg-white rounded-lg px-6 py-16 md:p-10 border-t border-dashed md:border-none">
       <div className="flex items-center">
         <svg
-          className="h-8 w-8 lg:h-12 lg:w-12"
+          className="h-10 w-10 lg:h-12 lg:w-12"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
         >
@@ -16,7 +19,7 @@ function Form() {
             <path d="M9.5 11.75a2 2 0 1 0 0-4a2 2 0 0 0 0 4m0 1a3 3 0 1 0 0-6a3 3 0 0 0 0 6" />
           </g>
         </svg>
-        <h1 className="text-xl md:text-2xl font-light ml-2">
+        <h1 className="text-2xl md:text-2xl font-light ml-2">
           <span className=" font-semibold">Team</span> registration
         </h1>
       </div>
@@ -43,6 +46,25 @@ function Form() {
             {i !== 4 && <div className="w-[40px] h-[1px] bg-neutral-200"></div>}
           </div>
         ))}
+      </div>
+
+      <div className="mt-10 flex items-center">
+        <h2 className="font-medium">Team details</h2>
+        <p className="text-sm text-neutral-600 ml-3">
+          <span className="text-red-400">*</span> marked fields are mandatory
+        </p>
+      </div>
+      <div className="mt-5">
+        {/* <Teamname /> */}
+        <Member1 />
+      </div>
+      <div className="flex items-center justify-between mt-8">
+        <button></button>
+        <Button className="bg-black text-white rounded-full">
+          <div className="flex items-center">
+            <span>Next</span>
+          </div>
+        </Button>
       </div>
     </div>
   );
