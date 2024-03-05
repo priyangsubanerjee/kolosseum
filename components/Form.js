@@ -246,9 +246,7 @@ function Form() {
 
   return (
     <div
-      style={{
-        pointerEvents: isLoading ? "none" : "all",
-      }}
+      style={{}}
       className="w-full md:w-full h-full relative md:h-fit bg-white md:bg-white lg:rounded-lg px-6 py-16 md:p-10 border-t border-dashed lg:border-none"
     >
       <div className="flex items-center">

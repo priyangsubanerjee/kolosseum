@@ -38,18 +38,50 @@ export async function POST(request) {
       process.env.ZOHO_MAIL,
       process.env.ZOHO_PASS,
       emails,
-      `Registration Confirmed - ${teamname}``
-        <!DOCTYPE html>
-        <html lang="en">
-            <body>
-            <p>Dear prticipant,</p>
-            <p>This email confirms the successful registration of team <strong>${teamname}</strong> (Team ID: ${pid}) for the <strong>Kolesseum</strong> taking place on <strong>17th march, 2024.</strong>.</p> <br/><br/>
-            <p>We are pleased to have you participate and look forward to a successful event. Please keep this Team ID (Team ID: ${pid}) for any further communication regarding the event.</p> <br/><br/>
-            <p>We will be in touch soon with any additional information.</p>
-            <p>Thank you,</p>
-            <p>[Your Name/Team Representative Name]</p>
-            </body>
-        </html>
+      `Registration Confirmed - ${ticketProp.teamName}`,
+      ` <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registration Confirmed - Team [Your Team Name]</title>
+  </head>
+  <body>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+      body {
+        font-family: "Inter", sans-serif;
+        font-size: 1rem;
+        line-height: 1.7;
+        color: #333;
+      }
+    </style>
+    <p>Dear participant,</p>
+    <p style="margin-top: 40px">
+      This email confirms the successful registration of team
+      <strong>${teamname}</strong> (Team ID: ${pid}) for the
+      <strong>Kolosseum</strong> taking place on
+      <strong>17th March, 2024</strong>.
+    </p>
+    <p style="margin-top: 80px">
+      We are pleased to have you participate and look forward to a successful
+      event. Please keep this Team ID (${pid}) for any further communication
+      regarding the event.
+    </p>
+    <p style="margin-top: 80px">
+      <strong>In the meantime, feel free to:</strong>
+    </p>
+    <ul>
+      <li>Follow our <a href="">Instagram page</a></li>
+      <li>Follow our <a href="">LinkedIn page</a></li>
+    </ul>
+    <p style="margin-top: 70px">
+      We will be in touch soon with any additional information.
+    </p>
+    <p style="margin-top: 100px">Thank you,</p>
+    <p>Priyangsu Banerjee (Lead)</p>
+  </body>
+</html>
+
 
       `
     );
