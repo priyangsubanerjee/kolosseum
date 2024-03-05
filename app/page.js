@@ -13,12 +13,12 @@ export default function Home() {
       />
 
       <div className="absolute inset-0 h-full w-full lg:flex justify-center lg:p-10">
-        <div className="w-full lg:w-[430px] shrink-0 flex flex-col lg:h-full bg-black/0 backdrop-blur-2xl overflow-hidden lg:rounded-l-xl relative">
-          <div className="p-3">
+        <div className="w-full lg:min-h-0 min-h-screen lg:w-[430px] shrink-0 flex flex-col lg:h-full bg-black/0 backdrop-blur-xl overflow-hidden lg:rounded-l-xl relative">
+          <div className="md:p-3">
             <img
               src="https://techcrunch.com/wp-content/uploads/2023/06/IMG_0058.jpeg"
               alt=""
-              className="rounded-lg"
+              className="md:rounded-lg"
             />
           </div>
           <div className="px-6 mt-6">
