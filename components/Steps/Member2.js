@@ -51,6 +51,7 @@ function Member2({ formProps, setFormProps }) {
       />
       <Input
         label="Contact number *"
+        type="tel"
         value={formProps.member2.phone}
         onChange={(e) =>
           setFormProps({

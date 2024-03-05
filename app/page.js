@@ -13,8 +13,8 @@ export const viewport = {
 };
 export default function Home() {
   return (
-    <main className="min-h-screen bg-neutral-100">
-      <div className="md:flex lg:p-8 md:space-x-6">
+    <main className="min-h-screen h-fit bg-neutral-100">
+      <div className="md:flex h-fit lg:p-8 md:space-x-6">
         <Eventdetails />
         <Form />
       </div>

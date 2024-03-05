@@ -7,6 +7,7 @@ import Member1 from "./Steps/Member1";
 import Member2 from "./Steps/Member2";
 import Member3 from "./Steps/Member3";
 import Review from "./Steps/Review";
+import toast from "react-hot-toast";
 
 function Form() {
   const stepLabels = [
@@ -41,12 +42,111 @@ function Form() {
     },
   });
 
-  useEffect(() => {
-    console.log(formProps);
-  }, [formProps]);
+  const handleProgress = () => {
+    switch (step) {
+      case 0:
+        if (formProps.teamName === "") {
+          toast.error("Team name is required");
+          return;
+        } else if (formProps.arena === "") {
+          toast.error("Select arena");
+          return;
+        } else {
+          setStep((s) => s + 1);
+        }
+        break;
+      case 1:
+        if (formProps.member1.name === "") {
+          toast.error("Member name is required");
+          return;
+        } else if (formProps.member1.roll === "") {
+          toast.error("Roll number is required");
+          return;
+        } else if (formProps.member1.email === "") {
+          toast.error("Email is required");
+          return;
+        } else if (!formProps.member1.email.toLowerCase().includes("@")) {
+          toast.error("Invalid email address");
+          return;
+        } else if (
+          formProps.member1.email.toLowerCase().includes("@") &&
+          !formProps.member1.email.toLowerCase().includes("@kiit.ac.in")
+        ) {
+          toast.error("Email must end with @kiit.ac.in");
+          return;
+        } else if (formProps.member1.phone === "") {
+          toast.error("Contact number is required");
+          return;
+        } else {
+          setStep((s) => s + 1);
+        }
+        break;
+      case 2:
+        if (formProps.member2.name === "") {
+          toast.error("Member name is required");
+          return;
+        } else if (formProps.member2.roll === "") {
+          toast.error("Roll number is required");
+          return;
+        } else if (formProps.member2.email === "") {
+          toast.error("Email is required");
+          return;
+        } else if (!formProps.member2.email.toLowerCase().includes("@")) {
+          toast.error("Invalid email address");
+          return;
+        } else if (
+          formProps.member2.email.toLowerCase().includes("@") &&
+          !formProps.member2.email.toLowerCase().includes("@kiit.ac.in")
+        ) {
+          toast.error("Email must end with @kiit.ac.in");
+          return;
+        } else if (formProps.member2.phone === "") {
+          toast.error("Contact number is required");
+          return;
+        } else {
+          setStep((s) => s + 1);
+        }
+        break;
+      case 3:
+        if (
+          formProps.member3.name != "" ||
+          formProps.member3.roll != "" ||
+          formProps.member3.email != "" ||
+          formProps.member3.phone != ""
+        ) {
+          if (formProps.member3.name === "") {
+            toast.error("Member name is required");
+            return;
+          } else if (formProps.member3.roll === "") {
+            toast.error("Roll number is required");
+            return;
+          } else if (formProps.member3.email === "") {
+            toast.error("Email is required");
+            return;
+          } else if (!formProps.member3.email.toLowerCase().includes("@")) {
+            toast.error("Invalid email address");
+            return;
+          } else if (
+            formProps.member3.email.toLowerCase().includes("@") &&
+            !formProps.member3.email.toLowerCase().includes("@kiit.ac.in")
+          ) {
+            toast.error("Email must end with @kiit.ac.in");
+            return;
+          } else if (formProps.member3.phone === "") {
+            toast.error("Contact number is required");
+            return;
+          } else {
+            setStep((s) => s + 1);
+          }
+        } else {
+          setStep((s) => s + 1);
+        }
+        break;
+    }
+  };
 
   return (
-    <div className="w-full h-fit bg-white md:bg-white rounded-lg px-6 py-16 md:p-10 border-t border-dashed md:border-none">
+    <div className="w-full h-full md:h-fit bg-white md:bg-white rounded-lg px-6 py-16 md:p-10 border-t border-dashed md:border-none">
       <div className="flex items-center">
         <svg
           className="h-10 w-10 lg:h-12 lg:w-12"
@@ -87,7 +187,6 @@ function Form() {
           16 teams registered
         </span>
       </div>
-
       <div className="flex items-center justify-center mt-10 whitespace-nowrap scale-90 md:scale-100">
         {[1, 2, 3, 4, 5].map((i, index) => (
           <div key={i} className="flex items-center whitespace-nowrap">
@@ -105,14 +204,12 @@ function Form() {
           </div>
         ))}
       </div>
-
       <div className="mt-10 text-sm">
         <span className="font-medium">{stepLabels[step]}</span>
         <span className="text-xs text-neutral-600 ml-3">
           <span className="text-red-400">*</span> fields are mandatory
         </span>
       </div>
-
       <div className="mt-5">
         {step === 0 ? (
           <Teamname formProps={formProps} setFormProps={setFormProps} />
@@ -126,7 +223,6 @@ function Form() {
           <Review formProps={formProps} setFormProps={setFormProps} />
         ) : null}
       </div>
-
       <div className="flex items-center justify-between mt-12">
         <Button
           disabled={step === 0}
@@ -152,12 +248,7 @@ function Form() {
           </div>
         </Button>
         <Button
-          onClick={() =>
-            setStep((s) => {
-              if (s === 4) return s;
-              return s + 1;
-            })
-          }
+          onClick={() => handleProgress()}
           className="bg-black text-white rounded-full"
         >
           <div className="flex items-center space-x-4 px-2">
@@ -178,8 +269,7 @@ function Form() {
           </div>
         </Button>
       </div>
-
-      <Spacer y={10} className="md:hidden" />
+      <div className="h-44 md:hidden"></div>
     </div>
   );
 }

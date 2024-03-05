@@ -16,19 +16,12 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Providers>{children}</Providers>
         <Toaster
-          position="bottom-right"
-          containerStyle={{
-            bottom: "40px",
-            right: "40px",
-          }}
+          position="top-center"
           toastOptions={{
             style: {
-              background: "#111111",
-              color: "#cdcdcd",
               padding: "10px 15px",
               fontSize: "14px",
-              borderRadius: "8px",
-              border: "1px solid #1c1c1c",
+              borderRadius: "100px",
             },
           }}
         />
