@@ -5,6 +5,7 @@ import React, { useState } from "react";
 
 function Eventdetails() {
   const [contactOptionsOpen, setContactOptionsOpen] = useState(false);
+  const [readmore, setReadmore] = useState(false);
   return (
     <div className="w-full lg:max-w-[400px] shrink-0">
       <div className="h-fit p-5 rounded-lg bg-white">
@@ -24,7 +25,11 @@ function Eventdetails() {
             <span className="font-semibold">Kolesseum</span>{" "}
             <span className="text-indigo-400">✲</span> 2024
           </h1>
-          <p className="text-neutral-500 mt-3 text-xs leading-7">
+          <p
+            className={`text-neutral-500 mt-3 text-xs leading-7 ${
+              readmore ? "line-clamp-none" : "line-clamp-2"
+            }`}
+          >
             Gear up! Konnexions is back with the ultimate hackathon, Kolosseum.
             Brace yourself for an exhilarating journey of problem-solving,
             collaboration, and cutting-edge development. Whether you&apos;re a
@@ -33,6 +38,16 @@ function Eventdetails() {
             opportunity slip through your fingertips! Secure your spot now
             —register fast!
           </p>
+          <div className="flex items-center justify-end mt-3">
+            <button className="hover:underline">
+              <span
+                className="text-neutral-800 cursor-pointer text-xs "
+                onClick={() => setReadmore(!readmore)}
+              >
+                {readmore ? "Read less" : "Read more"}
+              </span>
+            </button>
+          </div>
         </div>
         <div className="mt-8">
           <div className="flex items-center">
