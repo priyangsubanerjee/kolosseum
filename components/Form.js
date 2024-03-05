@@ -264,12 +264,12 @@ function Form() {
             <path d="M9.5 11.75a2 2 0 1 0 0-4a2 2 0 0 0 0 4m0 1a3 3 0 1 0 0-6a3 3 0 0 0 0 6" />
           </g>
         </svg>
-        <h1 className="text-2xl md:text-2xl font-light ml-2">
+        <h1 className="text-xl md:text-2xl font-light ml-2">
           <span className=" font-semibold">Team</span> registration
         </h1>
-        <Button className="text-neutral-900 bg-neutral-200 rounded-full hover:underline text-sm flex items-center space-x-1 ml-auto">
-          <div className="flex items-center space-x-1 px-3">
-            <span>Login</span>
+        <Button className="text-neutral-900 bg-neutral-200 rounded-full hover:underline text-sm flex items-center ml-auto">
+          <div className="flex items-center md:px-3">
+            <span className="hidden md:block mr-1">Login</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="23"

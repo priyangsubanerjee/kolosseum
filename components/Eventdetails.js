@@ -8,7 +8,7 @@ function Eventdetails() {
   const [readmore, setReadmore] = useState(false);
   return (
     <div className="w-full lg:max-w-[400px] shrink-0">
-      <div className="h-fit p-5 rounded-lg bg-white">
+      <div className="h-fit px-5 py-2 rounded-lg bg-white">
         <div className="flex items-center justify-between">
           <img src="/ksac.png" className="h-12" alt="" />
           <img src="/konnexions.png" className="h-16" alt="" />
@@ -99,7 +99,7 @@ function Eventdetails() {
             <p className="text-sm ml-2">Campus 14, KIIT University</p>
           </div>
         </div>
-        <div className="mt-10 mb-10 md:mb-0 flex justify-between">
+        <div className="mt-10 mb-10 md:mb-7 flex justify-between">
           <button
             onClick={() => setContactOptionsOpen(true)}
             className="text-neutral-900 hover:underline text-sm flex items-center space-x-1"
