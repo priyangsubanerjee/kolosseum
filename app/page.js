@@ -5,15 +5,15 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-[900px] h-screen bg-gradient-to-br from-neutral-900 to-neutral-800 flex-col items-center justify-between p-24 relative">
+    <main className="flex lg:min-h-[900px] h-screen bg-gradient-to-br from-neutral-900 to-neutral-800 flex-col items-center justify-between p-24 relative">
       <img
         src="https://www.pixel4k.com/wp-content/uploads/2020/10/movement-colors-abstract-4k_1602440202.jpg.webp"
-        className="fixed inset-0 h-full w-full grayscale object-cover"
+        className="fixed inset-0 h-full w-full brightness-50 grayscale object-cover"
         alt=""
       />
 
-      <div className="absolute inset-0 h-full w-full lg:flex justify-center p-10">
-        <div className="w-[430px] shrink-0 flex flex-col h-full bg-white/20 border border-white/20 backdrop-blur-2xl overflow-hidden rounded-l-xl relative">
+      <div className="absolute inset-0 h-full w-full lg:flex justify-center lg:p-10">
+        <div className="w-full lg:w-[430px] shrink-0 flex flex-col lg:h-full bg-white/20 lg:border lg:border-white/20 backdrop-blur-2xl overflow-hidden lg:rounded-l-xl relative">
           <div className="p-3">
             <img
               src="https://techcrunch.com/wp-content/uploads/2023/06/IMG_0058.jpeg"
@@ -22,7 +22,7 @@ export default function Home() {
             />
           </div>
           <div className="px-6 mt-6">
-            <h1 className="text-white text-4xl font-jost font-semibold">
+            <h1 className="text-white text-3xl lg:text-4xl font-jost font-semibold">
               Kolesseum
             </h1>
             <p className="text-neutral-200 mt-3 text-sm leading-7">
@@ -130,7 +130,7 @@ export default function Home() {
             </div>
             <div className="flex items-center justify-center mt-8"></div>
           </div>
-          <div className="flex items-center justify-between mt-auto py-6 px-6">
+          <div className="hidden lg:flex items-center justify-between mt-auto py-6 px-6">
             <Button className="bg-white rounded-full">
               <div className="flex items-center space-x-2 px-4">
                 <span>Login</span>
@@ -163,10 +163,18 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="w-full max-w-[650px] bg-white/30 backdrop-blur-3xl -translate-x-[1px] h-full rounded-r-xl">
+        <div className="w-full max-w-[650px] bg-white/30 backdrop-blur-xl -translate-x-[1px] min-h-screen lg:min-h-0 lg:h-full pb-16 lg:rounded-r-xl">
           <Form />
         </div>
       </div>
     </main>
+
+    // <main>
+    //   <div className="h-16 border-b border-neutral-800 flex items-center px-6">
+    //     <h2 className="text-neutral-400 font-jost text-2xl">
+    //       Konnexions <span className="text-white">Kolesseum</span>
+    //     </h2>
+    //   </div>
+    // </main>
   );
 }
