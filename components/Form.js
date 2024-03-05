@@ -8,6 +8,7 @@ import Member3 from "./Steps/Member3";
 import Review from "./Steps/Review";
 import toast from "react-hot-toast";
 import axios from "axios";
+import Success from "./Steps/Success";
 
 function Form() {
   const stepLabels = [
@@ -16,8 +17,9 @@ function Form() {
     "Member 2",
     "Member 3 (optional)",
     "Review",
+    "Success",
   ];
-  const [step, setStep] = React.useState(0);
+  const [step, setStep] = React.useState(5);
 
   const [formProps, setFormProps] = React.useState({
     teamName: "Metal",
@@ -289,6 +291,8 @@ function Form() {
           <Member3 formProps={formProps} setFormProps={setFormProps} />
         ) : step === 4 ? (
           <Review formProps={formProps} setFormProps={setFormProps} />
+        ) : step === 5 ? (
+          <Success />
         ) : null}
       </div>
       <div className="flex items-center justify-between mt-12">
