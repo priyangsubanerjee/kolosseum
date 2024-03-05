@@ -21,6 +21,7 @@ function Member2({ formProps, setFormProps }) {
       />
       <Input
         label="Roll number *"
+        type="tel"
         value={formProps.member2.roll}
         onChange={(e) =>
           setFormProps({

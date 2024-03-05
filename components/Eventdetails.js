@@ -23,10 +23,13 @@ function Eventdetails() {
             <span className="text-indigo-400">✲</span> 2024
           </h1>
           <p className="text-neutral-500 mt-3 text-xs leading-7 line-clamp-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ea
-            vero nemo aspernatur neque nam quam consectetur tempora, quas nobis
-            impedit quisquam repudiandae molestiae? Quam ducimus similique
-            expedita aperiam delectus.
+            Gear up! Konnexions is back with the ultimate hackathon, Kolosseum.
+            Brace yourself for an exhilarating journey of problem-solving,
+            collaboration, and cutting-edge development. Whether you&apos;re a
+            coding maestro or a budding genius, this is your chance to showcase
+            your talent and make waves in the digital realm. Don&apos;t let this
+            opportunity slip through your fingertips! Secure your spot now
+            —register fast!
           </p>
         </div>
         <div className="mt-8">

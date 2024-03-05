@@ -78,6 +78,9 @@ function Form() {
         } else if (formProps.member1.phone === "") {
           toast.error("Contact number is required");
           return;
+        } else if (formProps.member1.phone.length !== 10) {
+          toast.error("Ph. number should be 10 digits");
+          return;
         } else {
           setStep((s) => s + 1);
           setFormProps({
@@ -107,6 +110,9 @@ function Form() {
           return;
         } else if (formProps.member2.phone === "") {
           toast.error("Contact number is required");
+          return;
+        } else if (formProps.member2.phone.length !== 10) {
+          toast.error("Ph. number should be 10 digits");
           return;
         } else {
           setStep((s) => s + 1);
@@ -143,6 +149,9 @@ function Form() {
             return;
           } else if (formProps.member3.phone === "") {
             toast.error("Contact number is required");
+            return;
+          } else if (formProps.member3.phone.length !== 10) {
+            toast.error("Ph. number should be 10 digits");
             return;
           } else {
             setStep((s) => s + 1);

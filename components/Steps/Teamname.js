@@ -17,7 +17,8 @@ function Teamname({ formProps, setFormProps }) {
         }}
       />
       <Select
-        selectedKeys={[formProps.arena]}
+        selectionMode="single"
+        selectedKeys={formProps.arena.length > 0 ? [formProps.arena] : []}
         onChange={(e) => setFormProps({ ...formProps, arena: e.target.value })}
         classNames={{
           value: "pl-3",
