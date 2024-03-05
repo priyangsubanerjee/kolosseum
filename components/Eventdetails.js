@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import { Button } from "@nextui-org/react";
+import { Button, Spacer } from "@nextui-org/react";
 import React, { useState } from "react";
 
 function Eventdetails() {
@@ -85,7 +85,10 @@ function Eventdetails() {
           </div>
         </div>
         <div className="mt-16 mb-10 md:mb-0 flex justify-between">
-          <button className="text-neutral-900 hover:underline text-sm flex items-center space-x-1">
+          <button
+            onClick={() => setContactOptionsOpen(true)}
+            className="text-neutral-900 hover:underline text-sm flex items-center space-x-1"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="28"
@@ -117,6 +120,78 @@ function Eventdetails() {
           </Button>
         </div>
       </div>
+      {contactOptionsOpen && (
+        <div className="fixed inset-0 z-30 h-full w-full backdrop-blur-sm bg-black/70 flex items-end md:items-center justify-center">
+          <div className="w-full md:w-[500px] bg-white md:rounded-lg p-5 pt-7 md:p-10 min-h-1/2 md:h-fit relative">
+            <button
+              onClick={() => setContactOptionsOpen(false)}
+              className="absolute top-5 right-5 text-neutral-600"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 1024 1024"
+              >
+                <path
+                  fill="currentColor"
+                  d="M512 64a448 448 0 1 1 0 896a448 448 0 0 1 0-896m0 393.664L407.936 353.6a38.4 38.4 0 1 0-54.336 54.336L457.664 512L353.6 616.064a38.4 38.4 0 1 0 54.336 54.336L512 566.336L616.064 670.4a38.4 38.4 0 1 0 54.336-54.336L566.336 512L670.4 407.936a38.4 38.4 0 1 0-54.336-54.336z"
+                />
+              </svg>
+            </button>
+            <div className="flex items-center space-x-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  d="M7.067 12.926a2.192 2.192 0 0 0-.016 1.009C4.49 13.573 3 11.764 3 10v-.5A1.5 1.5 0 0 1 4.5 8h6.023c.015.355.127.701.328 1H4.5a.5.5 0 0 0-.5.5v.5c0 1.253 1.088 2.6 3.067 2.926M8 1.5A2.75 2.75 0 1 1 8 7a2.75 2.75 0 0 1 0-5.5m0 1A1.75 1.75 0 1 0 8 6a1.75 1.75 0 0 0 0-3.5m3.584 5.081l.283-.75c.258-.68 1.062-1.016 1.74-.727l.388.166c.473.202.865.568.947 1.06c.457 2.725-1.908 6.601-4.63 7.59c-.492.178-1.024.04-1.445-.246l-.346-.235a1.184 1.184 0 0 1-.204-1.79l.545-.607a1.066 1.066 0 0 1 1.034-.323l1.225.29c.971-.607 1.492-1.46 1.562-2.56l-.878-.86a.937.937 0 0 1-.221-1.008"
+                />
+              </svg>
+              <h2 className="text-xl font-semibold">Contact Us</h2>
+            </div>
+
+            <div className="py-6">
+              <ul className="list-disc pl-6 space-y-4 text-sm">
+                <li>Priyanshu Jha (Coordinator)</li>
+                <li>Swasti Mishra (Coordinator)</li>
+                <li>Sudip Chanda (Asst. Coordinator)</li>
+                <li>Gourav Chakraborty (Asst. Coordinator)</li>
+              </ul>
+            </div>
+            <p className="text-center text-sm text-neutral-700 mt-10">
+              Other mediums
+            </p>
+            <div className="flex items-center justify-center mt-5 space-x-4">
+              <button>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1024px-Instagram-Icon.png"
+                  className="h-9 w-9 "
+                  alt=""
+                />
+              </button>
+              <button>
+                <img
+                  src="https://cdn.pixabay.com/photo/2021/12/10/16/37/facebook-6860914_1280.png"
+                  className="h-9 w-9 "
+                  alt=""
+                />
+              </button>
+              <button>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/256/174/174857.png"
+                  className="h-9 w-9 "
+                  alt=""
+                />
+              </button>
+            </div>
+            <Spacer y={6} />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
