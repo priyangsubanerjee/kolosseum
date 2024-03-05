@@ -27,12 +27,12 @@ export const metadata = {
     authors: ["Konnexions", "KIIT"],
     images: [
       {
-        url: "https://kolesseum.konnexions.dev/og-image-800.png",
+        url: "https://kolesseum.vercel.app/og-image-800.png",
         width: 800,
         height: 600,
       },
       {
-        url: "https://kolesseum.konnexions.dev/og-image-800.png",
+        url: "https://kolesseum.vercel.app/og-image-800.png",
         width: 1800,
         height: 1600,
       },
