@@ -27,7 +27,7 @@ function Eventdetails() {
           </h1>
           <p
             className={`text-neutral-500 mt-3 text-xs leading-7 ${
-              readmore ? "line-clamp-none" : "line-clamp-2"
+              readmore ? "line-clamp-none" : "line-clamp-2 lg:line-clamp-4"
             }`}
           >
             Gear up! Konnexions is back with the ultimate hackathon, Kolosseum.
