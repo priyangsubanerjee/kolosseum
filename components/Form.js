@@ -6,7 +6,7 @@ import toast from "react-hot-toast";
 const RegisterTeam = ({ teamProps, setTeamProps }) => {
   return (
     <div className="px-5 lg:px-10 mt-5">
-      <div className="dark lg:flex items-center text-white rounded-md px-4">
+      <div className="dark lg:flex items-center text-neutral-300 rounded-md px-4">
         <div className="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -23,9 +23,7 @@ const RegisterTeam = ({ teamProps, setTeamProps }) => {
               d="M12 3C7.749 3 5.623 3 4.303 4.318C3.298 5.321 3.058 6.788 3 9.3m18 0c-.058-2.512-.298-3.98-1.303-4.982c-.818-.817-1.946-1.127-3.697-1.246M21 14.7c-.058 2.512-.298 3.98-1.303 4.982C18.377 21 16.251 21 12 21c-4.251 0-6.377 0-7.697-1.318C3.298 18.679 3.058 17.212 3 14.7M8 8h8m-4 8V8m10 4h-2M4 12H2"
             />
           </svg>
-          <h2 className="text-base ml-4 shrink-0 tracking-wide text-white">
-            Team name
-          </h2>
+          <h2 className="text-base ml-4 shrink-0 tracking-wide">Team name</h2>
         </div>
         <div className="lg:ml-auto w-full lg:max-w-[330px] mt-5 lg:mt-0">
           <Input
@@ -42,7 +40,7 @@ const RegisterTeam = ({ teamProps, setTeamProps }) => {
           />
         </div>
       </div>
-      <div className="dark lg:flex items-center text-white rounded-md px-4 mt-5">
+      <div className="dark lg:flex items-center  text-neutral-300 rounded-md px-4 mt-5">
         <div className="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +53,7 @@ const RegisterTeam = ({ teamProps, setTeamProps }) => {
               d="M5 8a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m7-7a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m0 14a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m7-7a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m-7-5a2 2 0 0 0-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2m-7 7a2 2 0 0 0-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2m7 7a2 2 0 0 0-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2"
             />
           </svg>
-          <h2 className="text-base ml-4 shrink-0 tracking-wide text-white">
+          <h2 className="text-base ml-4 shrink-0 tracking-wide">
             Select arena
           </h2>
         </div>

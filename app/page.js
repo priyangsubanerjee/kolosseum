@@ -13,7 +13,45 @@ export default function Home() {
       />
 
       <div className="absolute inset-0 h-full w-full lg:flex justify-center lg:p-10">
-        <div className="w-full lg:min-h-0 min-h-screen lg:w-[430px] shrink-0 flex flex-col lg:h-full bg-black/0 backdrop-blur-xl overflow-hidden lg:rounded-l-xl relative">
+        <div className="w-full lg:min-h-0 h-[calc(100vh-80px)] lg:w-[430px] shrink-0 flex flex-col lg:h-full bg-black/0 backdrop-blur-xl overflow-hidden lg:rounded-l-xl relative">
+          <div className="py-4 px-4 flex justify-between">
+            <div>
+              {" "}
+              <button className="text-neutral-300 hover:underline text-sm flex items-center space-x-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M7.067 12.926a2.192 2.192 0 0 0-.016 1.009C4.49 13.573 3 11.764 3 10v-.5A1.5 1.5 0 0 1 4.5 8h6.023c.015.355.127.701.328 1H4.5a.5.5 0 0 0-.5.5v.5c0 1.253 1.088 2.6 3.067 2.926M8 1.5A2.75 2.75 0 1 1 8 7a2.75 2.75 0 0 1 0-5.5m0 1A1.75 1.75 0 1 0 8 6a1.75 1.75 0 0 0 0-3.5m3.584 5.081l.283-.75c.258-.68 1.062-1.016 1.74-.727l.388.166c.473.202.865.568.947 1.06c.457 2.725-1.908 6.601-4.63 7.59c-.492.178-1.024.04-1.445-.246l-.346-.235a1.184 1.184 0 0 1-.204-1.79l.545-.607a1.066 1.066 0 0 1 1.034-.323l1.225.29c.971-.607 1.492-1.46 1.562-2.56l-.878-.86a.937.937 0 0 1-.221-1.008"
+                  />
+                </svg>
+                <span>Contact us</span>
+              </button>
+            </div>
+            <Button
+              size="sm"
+              className="text-neutral-200 bg-transparent border border-neutral-700 rounded-full h-fit"
+            >
+              <div className="flex items-center space-x-2 px-3 py-2">
+                <span className=" font-medium text-sm">Login</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M12.293 5.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L16.586 13H5a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414"
+                  />
+                </svg>
+              </div>
+            </Button>
+          </div>
           <div className="md:p-3">
             <img
               src="https://techcrunch.com/wp-content/uploads/2023/06/IMG_0058.jpeg"
@@ -25,14 +63,13 @@ export default function Home() {
             <h1 className="text-white text-4xl lg:text-4xl font-jost font-semibold">
               Kolesseum
             </h1>
-            <p className="text-neutral-200 mt-3 text-sm leading-7">
+            <p className="text-neutral-300 mt-3 text-sm leading-7">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ea
               vero nemo aspernatur neque nam quam consectetur tempora, quas
               nobis impedit quisquam repudiandae molestiae? Quam ducimus
               similique expedita aperiam delectus.
             </p>
-            <div className="h-[1px] w-[50%] mx-auto bg-white/50 my-10"></div>
-            <div>
+            <div className="mt-6">
               <div className="flex items-center w-full text-white">
                 <div className="bg-white w-[40px] h-[40px] flex items-center justify-center rounded p-2">
                   <svg
@@ -74,7 +111,7 @@ export default function Home() {
                 </div>
                 <span className="ml-3 text-sm">Sunday, 17th march, 2023</span>
               </div>
-              <div className="flex items-center w-full text-white mt-2">
+              <div className="flex items-center w-full text-white mt-3">
                 <div className="bg-white w-[40px] h-[40px] flex items-center justify-center rounded p-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -107,63 +144,42 @@ export default function Home() {
 
                 <span className="ml-3 text-sm">Campus, 14</span>
               </div>
-              <div className="flex items-center w-full text-white mt-10">
-                <span className="text-sm mr-2">Share this form </span>
-                <button className="h-9 w-9 bg-white/10 hover:bg-white/30 transition-all flex items-center justify-center rounded-full">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="1.5"
-                      d="m20 12l-6.4-7v3.5C10.4 8.5 4 10.6 4 19c0-1.167 1.92-3.5 9.6-3.5V19z"
-                    />
-                  </svg>
-                </button>
-              </div>
             </div>
-            <div className="flex items-center justify-center mt-8"></div>
-          </div>
-          <div className="hidden lg:flex items-center justify-between mt-auto py-6 px-6">
-            <Button className="bg-white rounded-full">
-              <div className="flex items-center space-x-2 px-4">
-                <span>Login</span>
+            <Button className="md:hidden w-full bg-white text-black mt-12 mb-8 rounded-full h-fit">
+              <div className="flex items-center justify-center py-3 text-base space-x-2">
+                <span className="font-medium">Register now</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
                   height="20"
-                  viewBox="0 0 24 24"
+                  viewBox="0 0 48 48"
                 >
+                  <defs>
+                    <mask id="ipTRightUser0">
+                      <g
+                        fill="none"
+                        stroke="#fff"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="4"
+                      >
+                        <circle cx="24" cy="12" r="8" fill="#555" />
+                        <path d="M42 44c0-9.941-8.059-18-18-18S6 34.059 6 44" />
+                        <path d="m30 36l-8 8l-4-4" />
+                      </g>
+                    </mask>
+                  </defs>
                   <path
                     fill="currentColor"
-                    d="M12.293 5.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L16.586 13H5a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414"
+                    d="M0 0h48v48H0z"
+                    mask="url(#ipTRightUser0)"
                   />
                 </svg>
               </div>
             </Button>
-            <button className="text-white hover:underline text-sm flex items-center space-x-1">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="28"
-                height="28"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill="currentColor"
-                  d="M7.067 12.926a2.192 2.192 0 0 0-.016 1.009C4.49 13.573 3 11.764 3 10v-.5A1.5 1.5 0 0 1 4.5 8h6.023c.015.355.127.701.328 1H4.5a.5.5 0 0 0-.5.5v.5c0 1.253 1.088 2.6 3.067 2.926M8 1.5A2.75 2.75 0 1 1 8 7a2.75 2.75 0 0 1 0-5.5m0 1A1.75 1.75 0 1 0 8 6a1.75 1.75 0 0 0 0-3.5m3.584 5.081l.283-.75c.258-.68 1.062-1.016 1.74-.727l.388.166c.473.202.865.568.947 1.06c.457 2.725-1.908 6.601-4.63 7.59c-.492.178-1.024.04-1.445-.246l-.346-.235a1.184 1.184 0 0 1-.204-1.79l.545-.607a1.066 1.066 0 0 1 1.034-.323l1.225.29c.971-.607 1.492-1.46 1.562-2.56l-.878-.86a.937.937 0 0 1-.221-1.008"
-                />
-              </svg>
-              <span>Contact us</span>
-            </button>
           </div>
         </div>
-        <div className="w-full max-w-[650px] bg-neutral-900  backdrop-blur-xl -translate-x-[1px] min-h-screen lg:min-h-0 lg:h-full pb-16 lg:rounded-r-xl">
+        <div className="w-full max-w-[650px] bg-neutral-950/80  backdrop-blur-xl -translate-x-[1px] min-h-screen lg:min-h-0 lg:h-full pb-16 lg:rounded-r-xl">
           <Form />
         </div>
       </div>
