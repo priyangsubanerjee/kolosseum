@@ -27,20 +27,27 @@ export const RegisterTeam = async (teamProp) => {
 };
 
 export const CheckUniqueName = async (name) => {
-  const team = await prisma.team.findMany({
-    where: {
-      name: name,
-    },
-  });
-  if (team.length > 0) {
+  try {
+    const team = await prisma.team.findMany({
+      where: {
+        name: name,
+      },
+    });
+    if (team.length > 0) {
+      return {
+        success: false,
+        message: "Team name already exists",
+      };
+    } else {
+      return {
+        success: true,
+        message: "Team name is unique",
+      };
+    }
+  } catch (error) {
     return {
       success: false,
-      message: "Team name already exists",
-    };
-  } else {
-    return {
-      success: true,
-      message: "Team name is unique",
+      message: error.message,
     };
   }
 };
