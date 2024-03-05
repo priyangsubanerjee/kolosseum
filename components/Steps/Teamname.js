@@ -27,8 +27,8 @@ function Teamname({ formProps, setFormProps }) {
         label="Select arena"
         className="w-full"
       >
-        <SelectItem value="Webnest" key="Webnest">
-          Webnest
+        <SelectItem value="Konnexweb" key="Konnexweb">
+          Konnexweb
         </SelectItem>
         <SelectItem value="Kognizance" key="Kognizance">
           Kognizance
