@@ -22,7 +22,7 @@ function Eventdetails() {
             <span className="font-semibold">Kolesseum</span>{" "}
             <span className="text-indigo-400">✲</span> 2024
           </h1>
-          <p className="text-neutral-500 mt-3 text-xs leading-7 line-clamp-4">
+          <p className="text-neutral-500 mt-3 text-xs leading-7">
             Gear up! Konnexions is back with the ultimate hackathon, Kolosseum.
             Brace yourself for an exhilarating journey of problem-solving,
             collaboration, and cutting-edge development. Whether you&apos;re a
