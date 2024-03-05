@@ -267,21 +267,22 @@ function Form() {
         <h1 className="text-2xl md:text-2xl font-light ml-2">
           <span className=" font-semibold">Team</span> registration
         </h1>
-
-        <button className="text-sm ml-auto text-neutral-700 hover:underline flex items-center space-x-2">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 32 32"
-          >
-            <path
-              fill="currentColor"
-              d="M16 13a1 1 0 0 1 1 1v9a1 1 0 1 1-2 0v-9a1 1 0 0 1 1-1m0-2a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3M2 16C2 8.268 8.268 2 16 2s14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16M16 4C9.373 4 4 9.373 4 16s5.373 12 12 12s12-5.373 12-12S22.627 4 16 4"
-            />
-          </svg>
-          <span className="hidden md:block">Docs</span>
-        </button>
+        <Button className="text-neutral-900 bg-neutral-200 rounded-full hover:underline text-sm flex items-center space-x-1 ml-auto">
+          <div className="flex items-center space-x-1 px-3">
+            <span>Login</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="23"
+              height="23"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M12.48 20q-.213 0-.356-.143q-.143-.144-.143-.357t.143-.357q.143-.143.357-.143h5.904q.23 0 .423-.192q.192-.193.192-.423V5.615q0-.23-.192-.423Q18.615 5 18.385 5H12.48q-.214 0-.357-.143q-.143-.144-.143-.357t.143-.357Q12.267 4 12.481 4h5.904q.69 0 1.152.463q.463.462.463 1.152v12.77q0 .69-.462 1.152q-.463.463-1.153.463zm.407-7.5H4.519q-.213 0-.356-.143q-.144-.144-.144-.357t.144-.357q.143-.143.356-.143h8.368l-1.968-1.971q-.14-.14-.15-.339q-.009-.198.15-.363q.159-.165.352-.168q.192-.003.358.162l2.613 2.614q.243.242.243.565q0 .323-.243.565L11.63 15.18q-.146.146-.347.153q-.201.006-.367-.159q-.16-.165-.156-.357q.003-.191.162-.35z"
+              />
+            </svg>
+          </div>
+        </Button>
       </div>
       <div className="flex items-center mt-4 space-x-2">
         <span className="bg-neutral-50 py-2 text-xs px-4 rounded-full">
