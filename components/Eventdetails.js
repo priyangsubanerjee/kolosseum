@@ -7,16 +7,8 @@ function Eventdetails() {
     <div className="w-full lg:max-w-[400px] shrink-0">
       <div className="h-fit p-5 rounded-lg bg-white">
         <div className="flex items-center justify-between">
-          <img
-            src="https://ksac.kiit.ac.in/wp-content/uploads/2019/08/university-logo-retina.png"
-            className="h-12"
-            alt=""
-          />
-          <img
-            src="https://ksac.kiit.ac.in/wp-content/uploads/2020/06/konnexions.png"
-            className="h-16"
-            alt=""
-          />
+          <img src="/ksac.png" className="h-12" alt="" />
+          <img src="/konnexions.png" className="h-16" alt="" />
         </div>
         <div className="mt-4">
           <img
