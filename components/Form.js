@@ -6,6 +6,7 @@ import Teamname from "./Steps/Teamname";
 import Member1 from "./Steps/Member1";
 import Member2 from "./Steps/Member2";
 import Member3 from "./Steps/Member3";
+import Review from "./Steps/Review";
 
 function Form() {
   const stepLabels = [
@@ -56,7 +57,9 @@ function Form() {
             >
               <p>{i}</p>
             </div>
-            {i !== 5 && <div className="w-[30px] h-[1px] bg-neutral-200"></div>}
+            {i !== 5 && (
+              <div className="w-[30px] lg:w-[50px] h-[1px] bg-neutral-200"></div>
+            )}
           </div>
         ))}
       </div>
@@ -77,7 +80,7 @@ function Form() {
         ) : step === 3 ? (
           <Member3 />
         ) : step === 4 ? (
-          <Member1 />
+          <Review />
         ) : null}
       </div>
       <div className="flex items-center justify-between mt-12">
@@ -105,11 +108,16 @@ function Form() {
           </div>
         </Button>
         <Button
-          onClick={() => setStep((s) => s + 1)}
+          onClick={() =>
+            setStep((s) => {
+              if (s === 4) return s;
+              return s + 1;
+            })
+          }
           className="bg-black text-white rounded-full"
         >
           <div className="flex items-center space-x-4 px-2">
-            <span>Next</span>
+            <span>{step === 4 ? "Submit" : "Next"}</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
