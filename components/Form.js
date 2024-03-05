@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Input } from "@nextui-org/react";
+import { Button, Input, Spacer } from "@nextui-org/react";
 import React, { useEffect } from "react";
 import Teamname from "./Steps/Teamname";
 import Member1 from "./Steps/Member1";
@@ -112,6 +112,7 @@ function Form() {
           <span className="text-red-400">*</span> fields are mandatory
         </span>
       </div>
+
       <div className="mt-5">
         {step === 0 ? (
           <Teamname formProps={formProps} setFormProps={setFormProps} />
@@ -125,6 +126,7 @@ function Form() {
           <Review formProps={formProps} setFormProps={setFormProps} />
         ) : null}
       </div>
+
       <div className="flex items-center justify-between mt-12">
         <Button
           disabled={step === 0}
@@ -176,6 +178,8 @@ function Form() {
           </div>
         </Button>
       </div>
+
+      <Spacer y={10} className="md:hidden" />
     </div>
   );
 }
