@@ -5,7 +5,7 @@ import toast from "react-hot-toast";
 
 const RegisterTeam = ({ teamProps, setTeamProps }) => {
   return (
-    <div className="px-5 lg:px-10 mt-5">
+    <div className="px-2 lg:px-10 mt-5">
       <div className="dark lg:flex items-center text-neutral-300 rounded-md px-4">
         <div className="flex items-center">
           <svg
@@ -44,8 +44,8 @@ const RegisterTeam = ({ teamProps, setTeamProps }) => {
         <div className="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
+            width="30"
+            height="30"
             viewBox="0 0 24 24"
           >
             <path
@@ -82,7 +82,7 @@ const RegisterTeam = ({ teamProps, setTeamProps }) => {
 
 const Member1Details = ({ teamProps, setTeamProps }) => {
   return (
-    <div className="px-5 lg:px-10 mt-5 space-y-8">
+    <div className="px-2 lg:px-10 mt-5 space-y-8">
       <div className="dark lg:flex items-center rounded-md px-4 text-neutral-200">
         <div className="flex items-center">
           <svg
@@ -564,7 +564,7 @@ function Form() {
         teamProps={teamProps}
         currentStep={currentStep}
       />
-      <div className="flex items-center justify-between mt-20 px-10">
+      <div className="flex items-center justify-between mt-20 px-5 lg:px-10">
         <button
           disabled
           className="text-base disabled:opacity-50 disabled:cursor-not-allowed text-neutral-100 hover:underline"

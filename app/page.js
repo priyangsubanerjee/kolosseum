@@ -3,6 +3,12 @@ import Form from "@/components/Form";
 import { Button } from "@nextui-org/react";
 import Image from "next/image";
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
 export default function Home() {
   return (
     <main className="flex lg:min-h-[900px] h-screen bg-gradient-to-br from-neutral-900 to-neutral-800 flex-col items-center justify-between p-24 relative">
@@ -179,7 +185,7 @@ export default function Home() {
             </Button>
           </div>
         </div>
-        <div className="w-full max-w-[650px] bg-neutral-950/80  backdrop-blur-xl -translate-x-[1px] min-h-screen lg:min-h-0 lg:h-full pb-16 lg:rounded-r-xl">
+        <div className="w-full max-w-[650px] bg-neutral-900 backdrop-blur-xl -translate-x-[1px] min-h-screen lg:min-h-0 lg:h-full pb-16 lg:rounded-r-xl">
           <Form />
         </div>
       </div>
