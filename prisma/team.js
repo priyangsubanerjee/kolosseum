@@ -51,3 +51,37 @@ export const CheckUniqueName = async (name) => {
     };
   }
 };
+
+export const GetVirtualCard = async (id) => {
+  try {
+    const team = await prisma.team.findUnique({
+      where: {
+        pid: id,
+      },
+    });
+    if (!team) {
+      return {
+        success: false,
+        message: "Team not found",
+        card: {},
+      };
+    }
+    return {
+      success: true,
+      message: "Team found",
+      team: {
+        name: team.name,
+        pid: team.pid,
+        partipantsCount: team.partipantsCount,
+        members: team.members,
+      },
+    };
+  } catch (error) {
+    console.log(error.message);
+    return {
+      success: false,
+      message: error.message,
+      team: {},
+    };
+  }
+};
