@@ -6,7 +6,7 @@ import React from "react";
 function IdCards() {
   const VirtualCard = ({ firstName, lastName }) => {
     return (
-      <div className="w-[300px] md:w-[350px] relative">
+      <div className="w-[300px] md:w-[350px] relative pointer-events-none select-none">
         <img src="/idcard.png" className="h-full w-full" alt="" />
         <div className="absolute bottom-[90px] left-11">
           <h1 className="text-xl font-semibold font-poppins">{firstName}</h1>
@@ -49,7 +49,7 @@ function IdCards() {
             <span className="px-2">Share with friends</span>
           </Button>
         </div>
-        <div className="w-full h-full bg-white grid gap-y-10 md:gap-y-10 md:gap-x-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto md:mt-10 mt-12 lg:mt-20">
+        <div className="w-full h-full bg-white grid gap-y-10 md:gap-y-10 md:gap-x-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto md:mt-10 mt-12 lg:mt-20 relative">
           <div className="flex justify-center">
             <VirtualCard firstName="Priyangsu" lastName="Banerjee" />
           </div>
@@ -59,6 +59,8 @@ function IdCards() {
           <div className="flex justify-center md:col-span-2 lg:col-span-1">
             <VirtualCard firstName="Rahul" lastName="Choudhury" />
           </div>
+
+          <div className="absolute inset-0 h-full w-full bg-transparent"></div>
         </div>
       </div>
     </div>
