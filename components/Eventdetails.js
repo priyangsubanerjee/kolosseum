@@ -31,13 +31,13 @@ function Eventdetails() {
               readmore ? "line-clamp-none" : "line-clamp-2 lg:line-clamp-4"
             }`}
           >
-            Gear up! Konnexions is back with the ultimate hackathon, Kolosseum.
-            Brace yourself for an exhilarating journey of problem-solving,
-            collaboration, and cutting-edge development. Whether you&apos;re a
-            coding maestro or a budding genius, this is your chance to showcase
-            your talent and make waves in the digital realm. Don&apos;t let this
-            opportunity slip through your fingertips! Secure your spot now
-            —register fast!
+            Get ready to ignite your coding passion! Konnexions is rolling out
+            the red carpet for the epic hackathon experience, Kolosseum. Prepare
+            to dive into a whirlwind of innovation, teamwork, and the latest
+            tech marvels. Whether you&apos;re a coding wizard or a rising star,
+            seize this moment to dazzle and redefine the digital landscape.
+            Don&apos;t let this opportunity slip through your fingertips! Secure
+            your spot now —register fast!
           </p>
           <div className="flex items-center justify-end mt-3">
             <button className="hover:underline">
