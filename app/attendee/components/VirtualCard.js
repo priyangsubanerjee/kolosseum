@@ -6,6 +6,7 @@ import { Button, Spinner } from "@nextui-org/react";
 import axios from "axios";
 import Link from "next/link";
 import React, { useEffect } from "react";
+import toast from "react-hot-toast";
 
 function VirtualCard({ tid }) {
   const [pageLoaded, setPageLoaded] = React.useState(false);
