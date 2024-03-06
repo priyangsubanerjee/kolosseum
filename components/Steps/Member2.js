@@ -26,7 +26,11 @@ function Member2({ formProps, setFormProps }) {
         onChange={(e) =>
           setFormProps({
             ...formProps,
-            member2: { ...formProps.member2, roll: e.target.value },
+            member2: {
+              ...formProps.member2,
+              roll: e.target.value,
+              email: `${e.target.value}@kiit.ac.in`,
+            },
           })
         }
         required
