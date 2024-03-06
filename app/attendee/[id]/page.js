@@ -43,7 +43,6 @@ function IdCards() {
         <p className="md:text-center text-sm md:text-base mt-3 lg:mt-7 text-neutral-600 leading-[2]">
           Keep an eye on your email for further instructions.
         </p>
-
         <div className="flex items-center justify-center mt-5 md:mt-10">
           <Button className="rounded-full bg-black text-white">
             <span className="px-2">Share with friends</span>
