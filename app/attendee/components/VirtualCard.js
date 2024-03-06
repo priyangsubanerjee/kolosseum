@@ -18,7 +18,7 @@ function VirtualCard({ tid }) {
     return (
       <div className="w-[300px] md:w-[350px] relative pointer-events-none select-none">
         <img src="/idcard.png" className="h-full w-full" alt="" />
-        <div className="absolute bottom-[85px] left-11">
+        <div className="absolute bottom-[85px] left-9 md:left-11">
           <h1 className="text-[20px] font-semibold font-poppins text-[#345969]">
             {firstName}
           </h1>
@@ -88,9 +88,10 @@ function VirtualCard({ tid }) {
                 </Button>
               </Link>
             </div>
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold md:text-center text-neutral-700 mt-8 md:mt-8 lg:mt-16 leading-[1.5]">
-              Team <span className="outline-text">{team?.name}</span>, See you
-              on March 17, 2024
+            <h1 className="text-3xl md:text-3xl lg:text-4xl md:text-center text-neutral-700 mt-8 md:mt-8 lg:mt-16 leading-[1.5]">
+              Team{" "}
+              <span className="text-[#345969] font-semibold">{team?.name}</span>
+              , See you on March 17, 2024
             </h1>
             <p className="md:text-center text-sm md:text-base mt-3 lg:mt-7 text-neutral-600 leading-[2]">
               Keep an eye on your email for further instructions.
