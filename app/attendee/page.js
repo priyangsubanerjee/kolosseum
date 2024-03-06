@@ -1,7 +1,8 @@
+import { redirect } from "next/navigation";
 import React from "react";
 
 function TeamInfo() {
-  return <div>TeamInfo</div>;
+  return redirect("/");
 }
 
 export default TeamInfo;
