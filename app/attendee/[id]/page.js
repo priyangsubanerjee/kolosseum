@@ -44,6 +44,8 @@ function IdCards() {
             <img src="/idcard.png" className="w-[350px] md:w-[350px]" alt="" />
           </div>
         </div>
+
+        <div className="h-[500px] bg-red-100 mt-44"></div>
       </div>
     </div>
   );

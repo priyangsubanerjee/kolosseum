@@ -8,7 +8,7 @@ function Eventdetails() {
   const [readmore, setReadmore] = useState(false);
   return (
     <div className="w-full lg:max-w-[400px] shrink-0">
-      <div className="h-fit px-5 py-2 rounded-lg bg-white">
+      <div className="h-fit min-h-[820px] flex flex-col px-5 py-2 rounded-lg bg-white">
         <div className="flex items-center justify-between">
           <img src="/ksac.png" className="h-12" alt="" />
           <img src="/konnexions.png" className="h-16" alt="" />
@@ -21,10 +21,11 @@ function Eventdetails() {
           />
         </div>
         <div className="mt-8">
-          <h1 className="text-neutral-800 text-3xl lg:text-3xl font-light">
+          <img src="/logo-kolosseum.png" className="h-12" alt="" />
+          {/* <h1 className="text-neutral-800 text-3xl lg:text-3xl font-light">
             <span className="font-semibold">Kolesseum</span>{" "}
             <span className="text-indigo-400">✲</span> 2024
-          </h1>
+          </h1> */}
           <p
             className={`text-neutral-500 mt-3 text-xs leading-7 ${
               readmore ? "line-clamp-none" : "line-clamp-2 lg:line-clamp-4"
@@ -49,7 +50,7 @@ function Eventdetails() {
             </button>
           </div>
         </div>
-        <div className="mt-8">
+        <div className="mt-8 mb-10">
           <div className="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +100,7 @@ function Eventdetails() {
             <p className="text-sm ml-2">Campus 14, KIIT University</p>
           </div>
         </div>
-        <div className="mt-10 mb-10 md:mb-7 flex justify-between">
+        <div className="mt-10 lg:mt-auto mb-10 md:mb-7 flex justify-between">
           <button
             onClick={() => setContactOptionsOpen(true)}
             className="text-neutral-900 hover:underline text-sm flex items-center space-x-1"
