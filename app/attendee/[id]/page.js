@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { Button } from "@nextui-org/react";
+import Link from "next/link";
 import React from "react";
 
 function IdCards() {
@@ -12,14 +13,16 @@ function IdCards() {
             alt=""
             className="h-7 md:h-8 lg:h-10"
           />
-          <Button
-            size="smn"
-            className="absolute right-0 inset-y-0 rounded-full bg-neutral-100"
-          >
-            <div className="px-2 flex items-center">
-              <span>Register</span>
-            </div>
-          </Button>
+          <Link href="/">
+            <Button
+              size="smn"
+              className="absolute right-0 inset-y-0 rounded-full bg-neutral-100"
+            >
+              <div className="px-2 flex items-center">
+                <span>Register</span>
+              </div>
+            </Button>
+          </Link>
         </div>
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold md:text-center text-neutral-700 mt-8 md:mt-8 lg:mt-16 leading-[1.5]">
           Team <span className="outline-text">metal</span>, See you on March 17,
