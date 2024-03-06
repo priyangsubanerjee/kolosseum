@@ -16,6 +16,7 @@ module.exports = {
       },
       fontFamily: {
         jost: ["Jost", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
     },
   },

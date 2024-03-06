@@ -4,6 +4,18 @@ import Link from "next/link";
 import React from "react";
 
 function IdCards() {
+  const VirtualCard = ({ firstName, lastName }) => {
+    return (
+      <div className="w-[300px] md:w-[350px] relative">
+        <img src="/idcard.png" className="h-full w-full" alt="" />
+        <div className="absolute bottom-[90px] left-11">
+          <h1 className="text-xl font-semibold font-poppins">{firstName}</h1>
+          <p className="font-poppins text-neutral-600">{lastName}</p>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div>
       <div className="max-w-7xl mx-auto rounded-3xl mt-6 md:mt-10 lg:mt-16 overflow-hidden px-4 md:px-10 pb-20">
@@ -39,13 +51,13 @@ function IdCards() {
         </div>
         <div className="w-full h-full bg-white grid gap-y-10 md:gap-y-10 md:gap-x-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto md:mt-10 mt-12 lg:mt-20">
           <div className="flex justify-center">
-            <img src="/idcard.png" className="w-[300px] md:w-[350px]" alt="" />
+            <VirtualCard firstName="Priyangsu" lastName="Banerjee" />
           </div>
           <div className="flex justify-center">
-            <img src="/idcard.png" className="w-[350px] md:w-[350px]" alt="" />
+            <VirtualCard firstName="Masoom" lastName="Choudhury" />
           </div>
           <div className="flex justify-center md:col-span-2 lg:col-span-1">
-            <img src="/idcard.png" className="w-[350px] md:w-[350px]" alt="" />
+            <VirtualCard firstName="Rahul" lastName="Choudhury" />
           </div>
         </div>
       </div>
