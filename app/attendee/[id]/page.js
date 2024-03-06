@@ -21,10 +21,11 @@ function IdCards() {
             </div>
           </Button>
         </div>
-        <h1 className="text-3xl md:text-3xl lg:text-5xl font-semibold md:text-center text-neutral-700 mt-8 md:mt-8 lg:mt-16 leading-[1.5]">
-          Team <span className="outline-text">metal</span>, See you on March 17
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold md:text-center text-neutral-700 mt-8 md:mt-8 lg:mt-16 leading-[1.5]">
+          Team <span className="outline-text">metal</span>, See you on March 17,
+          2024
         </h1>
-        <p className="md:text-center md:text-base mt-4 lg:mt-7 text-neutral-600 leading-[2]">
+        <p className="md:text-center text-sm md:text-base mt-3 lg:mt-7 text-neutral-600 leading-[2]">
           Keep an eye on your email for further instructions.
         </p>
 
@@ -44,8 +45,6 @@ function IdCards() {
             <img src="/idcard.png" className="w-[350px] md:w-[350px]" alt="" />
           </div>
         </div>
-
-        <div className="h-[500px] bg-red-100 mt-44"></div>
       </div>
     </div>
   );
