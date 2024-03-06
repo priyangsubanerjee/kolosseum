@@ -59,10 +59,10 @@ function IdCards() {
           <div className="flex justify-center md:col-span-2 lg:col-span-1">
             <VirtualCard firstName="Rahul" lastName="Choudhury" />
           </div>
-
           <div className="absolute inset-0 h-full w-full bg-transparent"></div>
         </div>
       </div>
+      <div className="mt-20 h-72 bg-neutral-50"></div>
     </div>
   );
 }
