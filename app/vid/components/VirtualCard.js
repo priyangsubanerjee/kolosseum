@@ -90,7 +90,7 @@ function VirtualCard({ tid }) {
                 </Button>
               </Link>
             </div>
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-poppins font-medium text-center text-neutral-800 mt-16 md:mt-8 lg:mt-16 leading-[1.7]">
+            <h1 className="text-2xl md:text-3xl lg:text-3xl font-medium text-center text-neutral-800 mt-16 md:mt-8 lg:mt-16 leading-[1.7]">
               Team{" "}
               <span className="text-[#345969] font-semibold">{team?.name}</span>
               , See you on March 17, 2024
