@@ -268,7 +268,12 @@ function Form() {
           <h1 className="text-2xl md:text-2xl font-light ml-2">
             <span className=" font-semibold">Team</span> registration
           </h1>
-          <Button className="text-neutral-900 absolute top-0 md:static -translate-y-1/2 md:-translate-x-0 md:translate-y-0 left-1/2 -translate-x-1/2 bg-neutral-200 rounded-full hover:underline text-sm flex items-center ml-auto">
+          <Button
+            onClick={() => {
+              toast.error("Login window opens soon");
+            }}
+            className="text-neutral-900 absolute top-0 md:static -translate-y-1/2 md:-translate-x-0 md:translate-y-0 left-1/2 -translate-x-1/2 bg-neutral-200 rounded-full hover:underline text-sm flex items-center ml-auto"
+          >
             <div className="flex items-center px-3">
               <span className="mr-1">Login</span>
               <svg
