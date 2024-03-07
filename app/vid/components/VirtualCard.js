@@ -44,7 +44,7 @@ function VirtualCard({ tid }) {
   const findTeam = async (id) => {
     if (tid) {
       let findRequest = await axios.post(
-        "/attendee/teams/api",
+        "/vid/teams/api",
         {
           id: id,
         },

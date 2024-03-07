@@ -24,20 +24,20 @@ function Form() {
   const [isLoading, setIsLoading] = React.useState(false);
 
   const [formProps, setFormProps] = React.useState({
-    teamName: "",
-    arena: "",
-    totalParicipants: 0,
+    teamName: "Metal",
+    arena: "Konnexweb",
+    totalParticipants: 3,
     member1: {
-      name: "",
-      roll: "",
-      email: "",
-      phone: "",
+      name: "Priyangsu Banerjee",
+      roll: "22052490",
+      email: "22052490@kiit.ac.in",
+      phone: "9647045453",
     },
     member2: {
-      name: "",
-      roll: "",
-      email: "",
-      phone: "",
+      name: "Masoom Choudhury",
+      roll: "22052828",
+      email: "22052828@kiit.ac.in",
+      phone: "9531617265",
     },
     member3: {
       name: "",
@@ -246,12 +246,7 @@ function Form() {
 
   return (
     <div className="w-full md:w-full h-full relative md:h-fit">
-      <div
-        style={{
-          pointerEvents: isLoading ? "none" : "all",
-        }}
-        className="w-full md:w-full h-full relative md:h-fit bg-white md:bg-white lg:rounded-lg px-6 py-16 md:p-10 border-t border-dashed lg:border-none"
-      >
+      <div className="w-full md:w-full h-full relative md:h-fit bg-white md:bg-white lg:rounded-lg px-6 py-16 md:p-10 border-t border-dashed lg:border-none">
         <div className="flex items-center">
           <svg
             className="h-10 w-10 lg:h-12 lg:w-12"
