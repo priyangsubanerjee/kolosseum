@@ -96,7 +96,7 @@ function ContactUs() {
   ];
 
   return (
-    <div className="my-12 md:py-24">
+    <div className="my-12 md:py-10">
       <div className="max-w-7xl mx-auto px-4">
         <Link className="mx-auto" href="/">
           <img src="/logo-kolosseum.png" className="h-8 mx-auto" alt="" />
