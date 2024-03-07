@@ -421,6 +421,10 @@ function Form() {
         </div>
         <div className="h-44 md:hidden"></div>
       </div>
+
+      {/* <div className="bg-white w-fit rounded-lg mt-6">
+        <img src="/prizepool.png" className="rounded-lg h-32" alt="" />
+      </div> */}
     </div>
   );
 }
