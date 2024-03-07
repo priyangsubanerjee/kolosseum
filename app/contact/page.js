@@ -93,6 +93,11 @@ function ContactUs() {
       image: "https://media.graphassets.com/jDUP6UbrSvCyr8GMZKsg",
       phone: "+91 96744 22441",
     },
+    {
+      name: "Sushant",
+      image: "https://media.graphassets.com/MGRDVNGvQKK0ovbhdy3A",
+      phone: "+91 86514 76642",
+    },
   ];
 
   return (
