@@ -123,14 +123,18 @@ function Eventdetails() {
               xmlns="http://www.w3.org/2000/svg"
               width="20"
               height="20"
-              viewBox="0 0 32 32"
+              viewBox="0 0 512 512"
             >
               <path
-                fill="currentColor"
-                d="M16 13a1 1 0 0 1 1 1v9a1 1 0 1 1-2 0v-9a1 1 0 0 1 1-1m0-2a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3M2 16C2 8.268 8.268 2 16 2s14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16M16 4C9.373 4 4 9.373 4 16s5.373 12 12 12s12-5.373 12-12S22.627 4 16 4"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+                d="M384 224v184a40 40 0 0 1-40 40H104a40 40 0 0 1-40-40V168a40 40 0 0 1 40-40h167.48M336 64h112v112M224 288L440 72"
               />
             </svg>
-            <span>Docs</span>
+            <span>Event giude</span>
           </button>
         </div>
       </div>
