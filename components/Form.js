@@ -82,7 +82,7 @@ function Form() {
           return;
         } else if (
           formProps.member1.email.toLowerCase().includes("@") &&
-          !formProps.member1.email.toLowerCase().includes("@kiit.ac.in")
+          !formProps.member1.email.toLowerCase().includes("kiit.ac.in")
         ) {
           toast.error("Email must end with @kiit.ac.in");
           return;
@@ -115,7 +115,7 @@ function Form() {
           return;
         } else if (
           formProps.member2.email.toLowerCase().includes("@") &&
-          !formProps.member2.email.toLowerCase().includes("@kiit.ac.in")
+          !formProps.member2.email.toLowerCase().includes("kiit.ac.in")
         ) {
           toast.error("Email must end with @kiit.ac.in");
           return;
@@ -154,7 +154,7 @@ function Form() {
             return;
           } else if (
             formProps.member3.email.toLowerCase().includes("@") &&
-            !formProps.member3.email.toLowerCase().includes("@kiit.ac.in")
+            !formProps.member3.email.toLowerCase().includes("kiit.ac.in")
           ) {
             toast.error("Email must end with @kiit.ac.in");
             return;
