@@ -88,7 +88,7 @@ export const GeneralMessage = (team_name, team_id) => {
       />
       <div class="messageBox">
         <h1 style="font-size: 20px; font-weight: 600; margin-top: 20px">
-          Woohoo!
+          Greetings !
         </h1>
         <p style="font-weight: 400; line-height: 1.9; margin-top: 10px">
           Your team has successfully secured a spot. This email serves as
@@ -96,6 +96,7 @@ export const GeneralMessage = (team_name, team_id) => {
           for Kolosseum 1.0 scheduled on March 17, 2024. We are delighted to
           have your team onboard and anticipate a fruitful and enjoyable event.
         </p>
+
         <a
           style="display: block; max-width: 450px; margin: 0 auto"
           href="https://kolosseum.konnexions.dev/vid/${team_id}"
@@ -106,10 +107,12 @@ export const GeneralMessage = (team_name, team_id) => {
             alt=""
           />
         </a>
+
         <p style="font-weight: 400; line-height: 1.9; margin-top: 20px">
           Kindly retain the Team ID (${team_id}) for all future correspondence
           concerning the event.Let's make this event one to remember!
         </p>
+
         <p style="margin-top: 29px; font-weight: 400">
           Have a great day ahead!
         </p>
