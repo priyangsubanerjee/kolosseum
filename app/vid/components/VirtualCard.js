@@ -72,11 +72,13 @@ function VirtualCard({ tid }) {
         <>
           <div className="max-w-7xl mx-auto rounded-3xl mt-6 md:mt-10 lg:mt-16 overflow-hidden px-4 md:px-10 pb-20">
             <div className="flex items-center md:justify-center relative w-full">
-              <img
-                src="/logo-kolosseum.png"
-                alt=""
-                className="h-7 md:h-8 lg:h-10"
-              />
+              <Link href="/">
+                <img
+                  src="/logo-kolosseum.png"
+                  alt=""
+                  className="h-7 md:h-8 lg:h-10"
+                />
+              </Link>
               <Link href="/">
                 <Button
                   size="smn"
