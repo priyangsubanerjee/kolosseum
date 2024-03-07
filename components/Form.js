@@ -1,5 +1,5 @@
 "use client";
-import { Button, Input, Spacer } from "@nextui-org/react";
+import { Button, Input, Spacer, Spinner } from "@nextui-org/react";
 import React, { useEffect } from "react";
 import Teamname from "./Steps/Teamname";
 import Member1 from "./Steps/Member1";
@@ -28,6 +28,7 @@ function Form() {
   const [step, setStep] = React.useState(0);
   const [uid, setUid] = React.useState("");
   const [isLoading, setIsLoading] = React.useState(false);
+  const [registeredTeams, setRegisteredTeams] = React.useState(0);
 
   const [formProps, setFormProps] = React.useState({
     teamName: "",
@@ -250,6 +251,19 @@ function Form() {
     }
   };
 
+  const UpdateRegisteredTeamCount = async () => {
+    let getCountRequest = await axios.get("/register/api/team-count");
+    if (getCountRequest.data.success) {
+      setRegisteredTeams(getCountRequest.data.count);
+    } else {
+      UpdateRegisteredTeamCount();
+    }
+  };
+
+  useEffect(() => {
+    UpdateRegisteredTeamCount();
+  }, []);
+
   return (
     <div className="w-full md:w-full h-full relative md:h-fit">
       <div
@@ -300,8 +314,15 @@ function Form() {
           <span className="bg-neutral-50 py-2 text-xs px-4 rounded-full">
             Closing in {differenceInDays} days
           </span>
-          <span className="bg-sky-50 py-2 text-xs px-4 rounded-full">
-            16 teams registered
+          <span className="bg-sky-50 py-2 text-xs px-4 rounded-full flex items-center">
+            {registeredTeams == 0 ? (
+              <>
+                <div className="h-2 w-2 rounded-full animate-pulse bg-sky-500 mr-2"></div>
+              </>
+            ) : (
+              registeredTeams
+            )}{" "}
+            teams registered
           </span>
         </div>
         <div className="mt-10">
