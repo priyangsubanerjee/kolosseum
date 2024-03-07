@@ -3,9 +3,33 @@ import { Button } from "@nextui-org/react";
 import Link from "next/link";
 import React from "react";
 
-function ContactUs() {
-  // Swasti, Gourav, Sudip, Aunay, Priyangsu,
+export const metadata = {
+  title: "Contact us - Kolosseum",
+  description:
+    "Gear up! Konnexions is back with the ultimate hackathon, Kolosseum. Brace yourself for an exhilarating journey of problem-solving, collaboration, and cutting-edge development. Whether you're a coding maestro or a budding genius, this is your chance to showcase your talent and make waves in the digital realm. Don't let this opportunity slip through your fingertips! Secure your spot now —register fast!",
+  icons: {},
+  openGraph: {
+    title: "Contact us - Kolosseum",
+    description:
+      "Gear up! Konnexions is back with the ultimate hackathon, Kolosseum. Brace yourself for an exhilarating journey of problem-solving, collaboration, and cutting-edge development. Whether you're a coding maestro or a budding genius, this is your chance to showcase your talent and make waves in the digital realm. Don't let this opportunity slip through your fingertips! Secure your spot now —register fast!",
+    type: "website",
+    authors: ["Konnexions", "KIIT"],
+    images: [
+      //   {
+      //     url: "https://kolesseum.vercel.app/og-image-800.png",
+      //     width: 800,
+      //     height: 600,
+      //   },
+      //   {
+      //     url: "https://kolesseum.vercel.app/og-image-800.png",
+      //     width: 1800,
+      //     height: 1600,
+      //   },
+    ],
+  },
+};
 
+function ContactUs() {
   const MemberCard = ({ name, image, phone }) => {
     return (
       <div className="flex flex-col items-center">
