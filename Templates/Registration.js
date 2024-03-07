@@ -81,7 +81,7 @@ export const GeneralMessage = (team_name, team_id) => {
   </head>
   <body>
     <div class="container">
-      <img style="padding-top: 20px" src="/emailhead.png" alt="" />
+      <img style="padding-top: 20px" src="https://kolosseum.konnexions.dev/emailhead.png" alt="" />
       <div class="messageBox">
         <h1 style="font-size: 20px; font-weight: 600; margin-top: 20px">
           Woohoo!
