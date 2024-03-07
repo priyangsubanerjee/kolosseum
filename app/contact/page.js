@@ -98,7 +98,9 @@ function ContactUs() {
   return (
     <div className="my-12 md:py-24">
       <div className="max-w-7xl mx-auto px-4">
-        <img src="/logo-kolosseum.png" className="h-8 mx-auto" alt="" />
+        <Link className="mx-auto" href="/">
+          <img src="/logo-kolosseum.png" className="h-8 mx-auto" alt="" />
+        </Link>
         <h1 className="text-2xl md:text-3xl font-medium text-center mt-10">
           Contact Us <span className="text-fuchsia-400">✲</span> OC Team
         </h1>
