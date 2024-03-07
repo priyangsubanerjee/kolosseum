@@ -18,7 +18,7 @@ function VirtualCard({ tid }) {
     return (
       <div className="w-[300px] md:w-[350px] relative pointer-events-none select-none">
         <img src="/idcard.png" className="h-full w-full" alt="" />
-        <div className="absolute bottom-[85px] left-9 md:left-11">
+        <div className="absolute bottom-[70px] md:bottom-[85px] left-9 md:left-11">
           <h1 className="text-[20px] font-semibold font-poppins text-[#345969]">
             {firstName}
           </h1>
@@ -105,7 +105,7 @@ function VirtualCard({ tid }) {
               {team.members.map((member, index) => {
                 let name = member.split(" ");
                 let firstName = name[0];
-                let lastName = name[1];
+                let lastName = name.length > 1 ? name[name.length - 1] : "";
                 return (
                   <div key={index} className="flex justify-center">
                     <VirtualCard firstName={firstName} lastName={lastName} />
