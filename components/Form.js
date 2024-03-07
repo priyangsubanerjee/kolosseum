@@ -246,7 +246,12 @@ function Form() {
 
   return (
     <div className="w-full md:w-full h-full relative md:h-fit">
-      <div className="w-full md:w-full h-full relative md:h-fit bg-white md:bg-white lg:rounded-lg px-6 py-16 md:p-10 border-t border-dashed lg:border-none">
+      <div
+        style={{
+          pointerEvents: isLoading ? "none" : "auto",
+        }}
+        className="w-full md:w-full h-full relative md:h-fit bg-white md:bg-white lg:rounded-lg px-6 py-16 md:p-10 border-t border-dashed lg:border-none"
+      >
         <div className="flex items-center">
           <svg
             className="h-10 w-10 lg:h-12 lg:w-12"
