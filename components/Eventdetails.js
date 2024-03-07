@@ -51,7 +51,7 @@ function Eventdetails() {
             </button>
           </div>
         </div>
-        <div className="mt-8 mb-10">
+        <div className="mt-4 mb-10">
           <div className="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
