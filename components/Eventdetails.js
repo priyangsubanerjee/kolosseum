@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import { Button, Spacer } from "@nextui-org/react";
+import Link from "next/link";
 import React, { useState } from "react";
 
 function Eventdetails() {
@@ -101,23 +102,25 @@ function Eventdetails() {
           </div>
         </div>
         <div className="mt-10 lg:mt-auto mb-10 md:mb-7 flex justify-between">
-          <button
-            onClick={() => setContactOptionsOpen(true)}
-            className="text-neutral-900 hover:underline text-sm flex items-center space-x-1"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="28"
-              height="28"
-              viewBox="0 0 16 16"
+          <Link href={"/contact"}>
+            <button
+              onClick={() => setContactOptionsOpen(true)}
+              className="text-neutral-900 hover:underline text-sm flex items-center space-x-1"
             >
-              <path
-                fill="currentColor"
-                d="M7.067 12.926a2.192 2.192 0 0 0-.016 1.009C4.49 13.573 3 11.764 3 10v-.5A1.5 1.5 0 0 1 4.5 8h6.023c.015.355.127.701.328 1H4.5a.5.5 0 0 0-.5.5v.5c0 1.253 1.088 2.6 3.067 2.926M8 1.5A2.75 2.75 0 1 1 8 7a2.75 2.75 0 0 1 0-5.5m0 1A1.75 1.75 0 1 0 8 6a1.75 1.75 0 0 0 0-3.5m3.584 5.081l.283-.75c.258-.68 1.062-1.016 1.74-.727l.388.166c.473.202.865.568.947 1.06c.457 2.725-1.908 6.601-4.63 7.59c-.492.178-1.024.04-1.445-.246l-.346-.235a1.184 1.184 0 0 1-.204-1.79l.545-.607a1.066 1.066 0 0 1 1.034-.323l1.225.29c.971-.607 1.492-1.46 1.562-2.56l-.878-.86a.937.937 0 0 1-.221-1.008"
-              />
-            </svg>
-            <span>Contact us</span>
-          </button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  d="M7.067 12.926a2.192 2.192 0 0 0-.016 1.009C4.49 13.573 3 11.764 3 10v-.5A1.5 1.5 0 0 1 4.5 8h6.023c.015.355.127.701.328 1H4.5a.5.5 0 0 0-.5.5v.5c0 1.253 1.088 2.6 3.067 2.926M8 1.5A2.75 2.75 0 1 1 8 7a2.75 2.75 0 0 1 0-5.5m0 1A1.75 1.75 0 1 0 8 6a1.75 1.75 0 0 0 0-3.5m3.584 5.081l.283-.75c.258-.68 1.062-1.016 1.74-.727l.388.166c.473.202.865.568.947 1.06c.457 2.725-1.908 6.601-4.63 7.59c-.492.178-1.024.04-1.445-.246l-.346-.235a1.184 1.184 0 0 1-.204-1.79l.545-.607a1.066 1.066 0 0 1 1.034-.323l1.225.29c.971-.607 1.492-1.46 1.562-2.56l-.878-.86a.937.937 0 0 1-.221-1.008"
+                />
+              </svg>
+              <span>Contact us</span>
+            </button>
+          </Link>
           <button className="text-sm ml-auto text-neutral-700 hover:underline flex items-center space-x-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -134,7 +137,7 @@ function Eventdetails() {
                 d="M384 224v184a40 40 0 0 1-40 40H104a40 40 0 0 1-40-40V168a40 40 0 0 1 40-40h167.48M336 64h112v112M224 288L440 72"
               />
             </svg>
-            <span>Event giude</span>
+            <span>Event guide</span>
           </button>
         </div>
       </div>
