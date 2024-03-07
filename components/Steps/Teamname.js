@@ -33,8 +33,8 @@ function Teamname({ formProps, setFormProps }) {
         <SelectItem value="Kognizance" key="Kognizance">
           Kognizance
         </SelectItem>
-        <SelectItem value="option3" key="option3">
-          Option 3
+        <SelectItem value="Kernelkombat" key="Kernelkombat">
+          Kernelkombat
         </SelectItem>
       </Select>
     </div>
