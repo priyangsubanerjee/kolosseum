@@ -17,7 +17,7 @@ function Advertisement({ close }) {
           <h1 className="font-medium text-xl text-center">
             Fasten your seatbelts 🥳
           </h1>
-          <p className="text-sm text-neutral-600 mt-4 leading-7 text-center">
+          <p className="text-sm text-neutral-600 mt-2 leading-7 text-center">
             Kolosseum 2024 is finally happening. We are looking forward to
             seeing you and your team at the event.
           </p>

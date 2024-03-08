@@ -152,7 +152,7 @@ function VirtualCard({ tid }) {
               <div className="absolute inset-0 h-full w-full bg-transparent"></div>
             </div>
           </div>
-          <div className="mt-20 h-72 bg-neutral-50"></div>
+          <div className="mt-20 h-20"></div>
           {isAdvertisementOn && (
             <Advertisement close={() => setIsAdvertisementOn(false)} />
           )}
