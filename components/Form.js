@@ -253,6 +253,7 @@ function Form() {
     } else {
       toast.dismiss();
       setIsLoading(false);
+      setStep(0);
       toast.error("Choose a different team name");
     }
   };
