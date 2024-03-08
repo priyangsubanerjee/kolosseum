@@ -36,13 +36,6 @@ function VirtualCard({ tid }) {
   useEffect(() => {
     if (tid) {
       findTeam(tid);
-      if (n_register) {
-        if (n_register == "true") {
-          setTimeout(() => {
-            setIsAdvertisementOn(true);
-          }, 5000);
-        }
-      }
     } else {
       return {
         redirect: {
@@ -77,6 +70,18 @@ function VirtualCard({ tid }) {
       }
     }
   };
+
+  useEffect(() => {
+    if (team) {
+      if (n_register) {
+        if (n_register == "true") {
+          setTimeout(() => {
+            setIsAdvertisementOn(true);
+          }, 5000);
+        }
+      }
+    }
+  }, [team]);
 
   const handleShare = () => {
     let msg = `We are team ${team.name} and we are participating in Kolosseum 2024. Join us in the biggest tech event of the year. Reserve your spot at https://kolosseum.konnexions.dev/vid/${tid}?register=true #Kolosseum2024 #TechEvent #Konnexweb #Kognizance #Kernelkombat`;
