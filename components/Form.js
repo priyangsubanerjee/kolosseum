@@ -1,5 +1,5 @@
 "use client";
-import { Button, Input, Spacer, Spinner } from "@nextui-org/react";
+import { Button, Input, Skeleton, Spacer, Spinner } from "@nextui-org/react";
 import React, { useEffect } from "react";
 import Teamname from "./Steps/Teamname";
 import Member1 from "./Steps/Member1";
@@ -317,16 +317,13 @@ function Form() {
           <span className="bg-neutral-50 py-2 text-xs px-4 rounded-full">
             Closing in {differenceInDays} days
           </span>
-          <span className="bg-sky-50 py-2 text-xs px-4 rounded-full flex items-center">
-            {registeredTeams == 0 ? (
-              <>
-                <div className="h-2 w-2 rounded-full animate-pulse bg-sky-500 mr-2"></div>
-              </>
-            ) : (
-              registeredTeams
-            )}{" "}
-            teams registered
-          </span>
+          <div className="bg-sky-50 py-2 text-xs px-4 rounded-full flex items-center relative">
+            {registeredTeams} teams registered
+            <Skeleton
+              isLoaded={registeredTeams > 0}
+              className="rounded-full absolute inset-0 h-full w-full"
+            />
+          </div>
         </div>
         <div className="mt-10">
           {step < 5 && (
