@@ -9,6 +9,7 @@ import Review from "./Steps/Review";
 import toast from "react-hot-toast";
 import axios from "axios";
 import Success from "./Steps/Success";
+import { NotifyTeam } from "@/helper/notify";
 
 function Form() {
   // last date 16th marh 2024
@@ -96,7 +97,7 @@ function Form() {
           setStep((s) => s + 1);
           setFormProps({
             ...formProps,
-            totalParicipants: 1,
+            totalParticipants: 1,
           });
         }
         break;
@@ -129,7 +130,7 @@ function Form() {
           setStep((s) => s + 1);
           setFormProps({
             ...formProps,
-            totalParicipants: 2,
+            totalParticipants: 2,
           });
         }
         break;
@@ -168,14 +169,14 @@ function Form() {
             setStep((s) => s + 1);
             setFormProps({
               ...formProps,
-              totalParicipants: 3,
+              totalParticipants: 3,
             });
           }
         } else {
           setStep((s) => s + 1);
           setFormProps({
             ...formProps,
-            totalParicipants: 2,
+            totalParticipants: 2,
           });
         }
         break;
@@ -239,6 +240,8 @@ function Form() {
         setIsLoading(false);
         toast.dismiss();
         toast.success("Registered successfully");
+        let tel_msg = `Team Name: ${formProps.teamName}%0AArena: ${formProps.arena}%0APid: ${registerRequest.data.pid}%0AParticipants: ${formProps.totalParticipants}`;
+        await NotifyTeam(tel_msg);
       } else {
         setIsLoading(false);
         toast.dismiss();
