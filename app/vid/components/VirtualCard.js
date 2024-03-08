@@ -66,6 +66,20 @@ function VirtualCard({ tid }) {
     }
   };
 
+  const handleShare = () => {
+    let msg = `We are team ${team.name} and we are participating in Kolosseum 2024. Join us in the biggest tech event of the year. Reserve your spot at https://kolosseum.konnexions.dev #Kolosseum2024 #TechEvent #Konnexweb #Kognizance #Kernelkombat`;
+    try {
+      navigator.share({
+        title: "Kolosseum 2024",
+        text: msg,
+        url: "https://kolosseum.konnexions.dev",
+      });
+    } catch (error) {
+      navigator.clipboard.writeText(msg);
+      toast.success("Copied to clipboard");
+    }
+  };
+
   return (
     <div>
       {pageLoaded ? (
@@ -99,7 +113,10 @@ function VirtualCard({ tid }) {
               Keep an eye on your email for further instructions.
             </p>
             <div className="flex items-center justify-center mt-10 md:mt-10">
-              <Button className="rounded-full bg-black text-white">
+              <Button
+                onClick={() => handleShare()}
+                className="rounded-full bg-black text-white"
+              >
                 <span className="px-2">Share with friends</span>
               </Button>
             </div>
