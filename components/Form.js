@@ -334,7 +334,7 @@ function Form() {
             Goodies & giveaways
           </span>
         </div>
-        <div className="mt-10">
+        <div className="mt-16">
           {step < 5 && (
             <>
               <div className="flex items-center justify-center whitespace-nowrap scale-90 md:scale-100">
