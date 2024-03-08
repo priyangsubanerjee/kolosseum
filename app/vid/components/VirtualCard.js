@@ -89,7 +89,6 @@ function VirtualCard({ tid }) {
       navigator.share({
         title: "Kolosseum 2024",
         text: msg,
-        files: ["/logo-kolosseum.png"],
       });
     } catch (error) {
       navigator.clipboard.writeText(msg);
