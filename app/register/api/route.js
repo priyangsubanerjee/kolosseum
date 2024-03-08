@@ -58,13 +58,6 @@ export async function POST(request) {
     await SaveToSheet(sheetData);
 
     if (process.env.NODE_ENV === "production") {
-      await sendMail(
-        process.env.ZOHO_MAIL,
-        process.env.ZOHO_PASS,
-        emails,
-        "Konnexions Team Registration",
-        GeneralMessage(teamname, pid)
-      );
     }
   }
 
