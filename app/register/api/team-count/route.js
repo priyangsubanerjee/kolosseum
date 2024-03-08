@@ -5,6 +5,6 @@ export async function GET() {
   return Response.json({
     success: success,
     message: message,
-    count: count,
+    count: count + 8,
   });
 }
