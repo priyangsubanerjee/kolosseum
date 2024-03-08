@@ -17,16 +17,16 @@ export const metadata = {
     type: "website",
     authors: ["Konnexions", "KIIT"],
     images: [
-      //   {
-      //     url: "https://kolesseum.vercel.app/og-image-800.png",
-      //     width: 800,
-      //     height: 600,
-      //   },
-      //   {
-      //     url: "https://kolesseum.vercel.app/og-image-800.png",
-      //     width: 1800,
-      //     height: 1600,
-      //   },
+      {
+        url: "https://kolosseum.konnexions.dev/og-image-800.jpeg",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "https://kolosseum.konnexions.dev/og-image-800.jpeg",
+        width: 1800,
+        height: 1600,
+      },
     ],
   },
 };
