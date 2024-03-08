@@ -48,7 +48,7 @@ function ContactUs() {
             <Button
               radius="full"
               isIconOnly
-              className="bg-white text-neutral-700 shadow"
+              className="bg-white text-neutral-700 border"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
