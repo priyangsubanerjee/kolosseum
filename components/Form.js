@@ -316,7 +316,7 @@ function Form() {
             </div>
           </Button>
         </div>
-        <div className="flex items-center mt-4 space-x-2">
+        <div className="flex flex-wrap items-center mt-4 gap-3">
           <span className="bg-neutral-50 py-2 text-xs px-4 rounded-full">
             Closing in {differenceInDays} days
           </span>
@@ -327,6 +327,12 @@ function Form() {
               className="rounded-full absolute inset-0 h-full w-full"
             />
           </div>
+          <span className="bg-pink-50 py-2 text-xs px-4 rounded-full">
+            Prize pool of ₹21,000
+          </span>
+          <span className="bg-yellow-50 py-2 text-xs px-4 rounded-full">
+            Goodies & giveaways
+          </span>
         </div>
         <div className="mt-10">
           {step < 5 && (
@@ -424,10 +430,6 @@ function Form() {
         </div>
         <div className="h-44 md:hidden"></div>
       </div>
-
-      {/* <div className="bg-white w-fit rounded-lg mt-6">
-        <img src="/prizepool.png" className="rounded-lg h-32" alt="" />
-      </div> */}
     </div>
   );
 }
