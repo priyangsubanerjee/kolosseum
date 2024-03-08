@@ -84,7 +84,7 @@ function VirtualCard({ tid }) {
       navigator.share({
         title: "Kolosseum 2024",
         text: msg,
-        url: `https://kolosseum.konnexions.dev/vid/${tid}?register=true`,
+        files: ["/logo-kolosseum.png"],
       });
     } catch (error) {
       navigator.clipboard.writeText(msg);
