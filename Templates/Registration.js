@@ -91,8 +91,8 @@ export const GeneralMessage = (team_name, team_id) => {
           Greetings ${team_name}!
         </h1>
         <p style="font-weight: 400; line-height: 1.9; margin-top: 10px">
-          Your team has successfully secured a spot. This email serves as
-          confirmation of Team ${team_name} registration (Team ID: ${team_id})
+          You have successfully secured a spot. This email serves as
+          confirmation of ${team_name}'s registration (Team ID: ${team_id})
           for Kolosseum 1.0 scheduled on March 17, 2024. We are delighted to
           have your team onboard and anticipate a fruitful and enjoyable event.
         </p>
