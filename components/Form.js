@@ -12,7 +12,6 @@ import Success from "./Steps/Success";
 import { NotifyTeam } from "@/helper/notify";
 
 function Form() {
-  // last date 16th marh 2024
   const lastDate = new Date("2024-03-16T23:59:59");
   let today = new Date();
   let differenceInDays = Math.floor(
