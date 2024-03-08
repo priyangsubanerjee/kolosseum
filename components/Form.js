@@ -28,7 +28,7 @@ function Form() {
   const [step, setStep] = React.useState(0);
   const [uid, setUid] = React.useState("");
   const [isLoading, setIsLoading] = React.useState(false);
-  const [registeredTeams, setRegisteredTeams] = React.useState(0);
+  const [registeredTeams, setRegisteredTeams] = React.useState(null);
 
   const [formProps, setFormProps] = React.useState({
     teamName: "",
@@ -324,7 +324,7 @@ function Form() {
           <div className="bg-sky-50 py-2 text-xs px-4 rounded-full flex items-center relative">
             {registeredTeams} teams registered
             <Skeleton
-              isLoaded={registeredTeams > 0}
+              isLoaded={registeredTeams !== null}
               className="rounded-full absolute inset-0 h-full w-full"
             />
           </div>
