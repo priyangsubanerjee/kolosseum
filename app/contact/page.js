@@ -91,7 +91,7 @@ function ContactUs() {
       phone: "+91 9647045453",
     },
     {
-      name: "Aunay",
+      name: "Anunay",
       image: "https://media.graphassets.com/jDUP6UbrSvCyr8GMZKsg",
       phone: "+91 96744 22441",
     },

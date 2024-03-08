@@ -60,6 +60,9 @@ function Form() {
         if (formProps.teamName === "") {
           toast.error("Team name is required");
           return;
+        } else if (formProps.teamName.length < 4) {
+          toast.error("Team name should be atleast 4 characters");
+          return;
         } else if (formProps.arena === "") {
           toast.error("Select arena");
           return;
