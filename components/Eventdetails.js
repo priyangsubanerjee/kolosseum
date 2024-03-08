@@ -101,7 +101,7 @@ function Eventdetails() {
             <p className="text-sm ml-2">Campus 14, KIIT University</p>
           </div>
         </div>
-        <div className="mt-10 lg:mt-auto mb-10 md:mb-7 flex justify-between">
+        <div className="mt-10 lg:mt-auto mb-10 md:mb-3 flex justify-between">
           <Link href={"/contact"}>
             <button
               onClick={() => setContactOptionsOpen(true)}

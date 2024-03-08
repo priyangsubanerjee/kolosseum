@@ -88,7 +88,7 @@ export const GeneralMessage = (team_name, team_id) => {
       />
       <div class="messageBox">
         <h1 style="font-size: 20px; font-weight: 600; margin-top: 20px">
-          Greetings !
+          Greetings ${team_name}!
         </h1>
         <p style="font-weight: 400; line-height: 1.9; margin-top: 10px">
           Your team has successfully secured a spot. This email serves as
