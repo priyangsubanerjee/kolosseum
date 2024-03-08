@@ -28,13 +28,13 @@ function Teamname({ formProps, setFormProps }) {
         className="w-full"
       >
         <SelectItem value="Konnexweb" key="Konnexweb">
-          Konnexweb
+          Konnexweb (Web Dev)
         </SelectItem>
         <SelectItem value="Kognizance" key="Kognizance">
-          Kognizance
+          Kognizance (App Dev)
         </SelectItem>
         <SelectItem value="Kernelkombat" key="Kernelkombat">
-          Kernelkombat
+          Kernelkombat (ML & AI)
         </SelectItem>
       </Select>
     </div>
