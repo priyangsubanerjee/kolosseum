@@ -16,7 +16,7 @@ function Eventdetails() {
         </div>
         <div className="mt-4">
           <img
-            src="/tech-park-2.jpeg"
+            src="/tech-park-2.png"
             className="h-[250px] object-cover w-full rounded-md"
             alt=""
           />
