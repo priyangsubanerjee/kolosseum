@@ -25,7 +25,7 @@ function Form() {
     "Review",
     "Success",
   ];
-  const [step, setStep] = React.useState(5);
+  const [step, setStep] = React.useState(0);
   const [uid, setUid] = React.useState("");
   const [isLoading, setIsLoading] = React.useState(false);
   const [registeredTeams, setRegisteredTeams] = React.useState(0);

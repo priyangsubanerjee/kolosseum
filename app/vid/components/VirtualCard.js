@@ -2,17 +2,22 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
+import Advertisement from "@/components/Advertisement";
 import { Button, Spinner } from "@nextui-org/react";
 import axios from "axios";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import React, { useEffect } from "react";
 import toast from "react-hot-toast";
 
 function VirtualCard({ tid }) {
   const [pageLoaded, setPageLoaded] = React.useState(false);
   const [spinnerOn, setSpinnerOn] = React.useState(true);
+  const [isAdvertisementOn, setIsAdvertisementOn] = React.useState(false);
   const [stateText, setStateText] = React.useState("Searching for team");
   const [team, setTeam] = React.useState({});
+  const searchParams = useSearchParams();
+  const n_register = searchParams.get("register");
 
   const VirtualCard = ({ firstName, lastName }) => {
     return (
@@ -31,6 +36,13 @@ function VirtualCard({ tid }) {
   useEffect(() => {
     if (tid) {
       findTeam(tid);
+      if (n_register) {
+        if (n_register == "true") {
+          setTimeout(() => {
+            setIsAdvertisementOn(true);
+          }, 5000);
+        }
+      }
     } else {
       return {
         redirect: {
@@ -67,12 +79,11 @@ function VirtualCard({ tid }) {
   };
 
   const handleShare = () => {
-    let msg = `We are team ${team.name} and we are participating in Kolosseum 2024. Join us in the biggest tech event of the year. Reserve your spot at https://kolosseum.konnexions.dev #Kolosseum2024 #TechEvent #Konnexweb #Kognizance #Kernelkombat`;
+    let msg = `We are team ${team.name} and we are participating in Kolosseum 2024. Join us in the biggest tech event of the year. Reserve your spot at https://kolosseum.konnexions.dev/vid/${tid}?register=true #Kolosseum2024 #TechEvent #Konnexweb #Kognizance #Kernelkombat`;
     try {
       navigator.share({
         title: "Kolosseum 2024",
         text: msg,
-        url: "https://kolosseum.konnexions.dev",
       });
     } catch (error) {
       navigator.clipboard.writeText(msg);
@@ -136,6 +147,9 @@ function VirtualCard({ tid }) {
             </div>
           </div>
           <div className="mt-20 h-72 bg-neutral-50"></div>
+          {isAdvertisementOn && (
+            <Advertisement close={() => setIsAdvertisementOn(false)} />
+          )}
         </>
       ) : (
         <>

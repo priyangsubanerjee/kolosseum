@@ -18,7 +18,7 @@ function Success({ uid }) {
           Team registered successfully
         </h1>
         <div className="mt-8">
-          <div className="h-12 rounded px-3 flex items-center justify-center bg-neutral-50 border-neutral-400 border border-dashed">
+          <div className="h-12 rounded px-3 flex items-center justify-center bg-neutral-50 border-neutral-00 border">
             <span className="text-sm text-neutral-600 ml-1">
               Team unique id:
             </span>
@@ -82,6 +82,46 @@ function Success({ uid }) {
               className="h-8 w-8 "
               alt=""
             />
+          </button>
+        </Link>
+      </div>
+
+      <div className="flex items-center justify-center mt-10">
+        <Link href={`https://kolosseum.konnexions.dev/vid/${uid}`}>
+          <button className="flex items-center justify-center space-x-2 boder-b bg-neutral-50 hover:bg-neutral-100 px-4 py-2 rounded-full">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 512 512"
+            >
+              <rect
+                width="320"
+                height="448"
+                x="96"
+                y="32"
+                fill="none"
+                stroke="currentColor"
+                stroke-linejoin="round"
+                stroke-width="32"
+                rx="48"
+              />
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+                d="M208 80h96"
+              />
+              <path
+                fill="currentColor"
+                d="M333.48 284.51A39.65 39.65 0 0 0 304 272c-11.6 0-22.09 4.41-29.54 12.43s-11.2 19.12-10.34 31C265.83 338.91 283.72 358 304 358s38.14-19.09 39.87-42.55c.88-11.78-2.82-22.77-10.39-30.94M371.69 448H236.31a12.05 12.05 0 0 1-9.31-4.17a13 13 0 0 1-2.76-10.92c3.25-17.56 13.38-32.31 29.3-42.66C267.68 381.06 285.6 376 304 376s36.32 5.06 50.46 14.25c15.92 10.35 26.05 25.1 29.3 42.66a13 13 0 0 1-2.76 10.92a12.05 12.05 0 0 1-9.31 4.17"
+              />
+            </svg>
+            <span className="text-sm text-neutral-600">
+              Get virtual id cards
+            </span>
           </button>
         </Link>
       </div>
