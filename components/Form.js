@@ -240,8 +240,9 @@ function Form() {
         setIsLoading(false);
         toast.dismiss();
         toast.success("Registered successfully");
-        let tel_msg = `Team Name: ${formProps.teamName}%0AArena: ${formProps.arena}%0APid: ${registerRequest.data.pid}%0AParticipants: ${formProps.totalParticipants}`;
-        await NotifyTeam(tel_msg);
+        await NotifyTeam(
+          `Team Name: ${formProps.teamName}%0AArena: ${formProps.arena}%0APid: ${registerRequest.data.pid}%0AParticipants: ${formProps.totalParticipants}`
+        );
       } else {
         setIsLoading(false);
         toast.dismiss();
