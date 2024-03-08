@@ -74,3 +74,25 @@ export async function POST(request) {
     pid: pid,
   });
 }
+
+// try {
+//   // If this is a "delete" event, delete the document in the other collection
+//   if (changeEvent.operationType === "delete") {
+//     await collection.deleteOne({ _id: docId });
+//   }
+
+//   // If this is an "insert" event, insert the document into the other collection
+//   else if (changeEvent.operationType === "insert") {
+//     await collection.insertOne(changeEvent.fullDocument);
+//   }
+
+//   // If this is an "update" or "replace" event, then replace the document in the other collection
+//   else if (
+//     changeEvent.operationType === "update" ||
+//     changeEvent.operationType === "replace"
+//   ) {
+//     await collection.replaceOne({ _id: docId }, changeEvent.fullDocument);
+//   }
+// } catch (err) {
+//   console.log("error performing mongodb write: ", err.message);
+// }
