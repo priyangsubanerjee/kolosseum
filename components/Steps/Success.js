@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { Button, Chip } from "@nextui-org/react";
+import Link from "next/link";
 import React from "react";
 import toast from "react-hot-toast";
 
@@ -16,9 +17,11 @@ function Success({ uid }) {
         <h1 className="text-xl font-medium mt-5">
           Team registered successfully
         </h1>
-        <div className="mt-6">
+        <div className="mt-8">
           <div className="h-12 rounded px-3 flex items-center justify-center bg-neutral-50 border-neutral-400 border border-dashed">
-            <span className="text-sm text-neutral-600 ml-1">Team id:</span>
+            <span className="text-sm text-neutral-600 ml-1">
+              Team unique id:
+            </span>
             <span className="text-center tracking-wider ml-3 font-medium">
               {uid}
             </span>
@@ -54,27 +57,33 @@ function Success({ uid }) {
       </div>
 
       <div className="flex items-center justify-center mt-4 space-x-4">
-        <button>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1024px-Instagram-Icon.png"
-            className="h-8 w-8 "
-            alt=""
-          />
-        </button>
-        <button>
-          <img
-            src="https://cdn.pixabay.com/photo/2021/12/10/16/37/facebook-6860914_1280.png"
-            className="h-8 w-8 "
-            alt=""
-          />
-        </button>
-        <button>
-          <img
-            src="https://cdn-icons-png.flaticon.com/256/174/174857.png"
-            className="h-8 w-8 "
-            alt=""
-          />
-        </button>
+        <Link href="https://www.instagram.com/kiitkonnexions/">
+          <button>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1024px-Instagram-Icon.png"
+              className="h-8 w-8 "
+              alt=""
+            />
+          </button>
+        </Link>
+        <Link href="https://www.facebook.com/kiitkonnexions">
+          <button>
+            <img
+              src="https://cdn.pixabay.com/photo/2021/12/10/16/37/facebook-6860914_1280.png"
+              className="h-8 w-8 "
+              alt=""
+            />
+          </button>
+        </Link>
+        <Link href="https://www.linkedin.com/company/kiitkonnexions/">
+          <button>
+            <img
+              src="https://cdn-icons-png.flaticon.com/256/174/174857.png"
+              className="h-8 w-8 "
+              alt=""
+            />
+          </button>
+        </Link>
       </div>
 
       {/* <div className="mt-4">

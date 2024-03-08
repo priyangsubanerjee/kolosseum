@@ -84,7 +84,7 @@ function VirtualCard({ tid }) {
     <div>
       {pageLoaded ? (
         <>
-          <div className="max-w-7xl mx-auto rounded-3xl mt-6 md:mt-10 lg:mt-16 overflow-hidden px-4 md:px-10 pb-20">
+          <div className="max-w-7xl mx-auto rounded-3xl mt-6 md:mt-10 lg:mt-16 overflow-hidden px-4 md:px-10 pb-20 bg-white">
             <div className="flex items-center md:justify-center relative w-full">
               <Link href="/">
                 <img
