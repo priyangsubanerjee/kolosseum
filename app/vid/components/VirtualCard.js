@@ -19,6 +19,12 @@ function VirtualCard({ tid }) {
   const searchParams = useSearchParams();
   const n_register = searchParams.get("register");
 
+  useEffect(() => {
+    isAdvertisementOn
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "auto");
+  }, [isAdvertisementOn]);
+
   const VirtualCard = ({ firstName, lastName }) => {
     return (
       <div className="w-[300px] md:w-[350px] relative pointer-events-none select-none">
