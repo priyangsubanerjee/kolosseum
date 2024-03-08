@@ -79,7 +79,7 @@ function VirtualCard({ tid }) {
   };
 
   const handleShare = () => {
-    let msg = `We are team ${team.name} and we are participating in Kolosseum 2024. Join us in the biggest tech event of the year. Reserve your spot at now! #Kolosseum2024 #TechEvent #Konnexweb #Kognizance #Kernelkombat`;
+    let msg = `We are team ${team.name} and we are participating in Kolosseum 2024. Join us in the biggest tech event of the year. Reserve your spot at https://kolosseum.konnexions.dev/vid/${tid}?register=true #Kolosseum2024 #TechEvent #Konnexweb #Kognizance #Kernelkombat`;
     try {
       navigator.share({
         title: "Kolosseum 2024",
