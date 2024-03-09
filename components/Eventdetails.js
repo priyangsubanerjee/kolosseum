@@ -16,29 +16,25 @@ function Eventdetails() {
         </div>
         <div className="mt-4">
           <img
-            src="/tech-park-2.png"
+            src="/event-static/event-banner.png"
             className="h-[250px] object-cover w-full rounded-md"
             alt=""
           />
         </div>
         <div className="mt-8">
-          <img src="/logo-kolosseum.png" className="h-12" alt="" />
-          {/* <h1 className="text-neutral-800 text-3xl lg:text-3xl font-light">
-            <span className="font-semibold">Kolesseum</span>{" "}
-            <span className="text-indigo-400">✲</span> 2024
-          </h1> */}
+          <img src="/event-static/event-logo.png" className="h-12" alt="" />
           <p
             className={`text-neutral-500 mt-3 text-xs leading-7 ${
               readmore ? "line-clamp-none" : "line-clamp-2 lg:line-clamp-4"
             }`}
           >
             Get ready to ignite your coding passion! Konnexions is rolling out
-            the red carpet for the epic hackathon experience, Kolosseum. Prepare
-            to dive into a whirlwind of innovation, teamwork, and the latest
-            tech marvels. Whether you&apos;re a coding wizard or a rising star,
-            seize this moment to dazzle and redefine the digital landscape.
-            Don&apos;t let this opportunity slip through your fingertips! Secure
-            your spot now —register fast!
+            the red carpet for the epic hackathon experience, Kodessphere.
+            Prepare to dive into a whirlwind of innovation, teamwork, and the
+            latest tech marvels. Whether you&apos;re a coding wizard or a rising
+            star, seize this moment to dazzle and redefine the digital
+            landscape. Don&apos;t let this opportunity slip through your
+            fingertips! Secure your spot now —register fast!
           </p>
           <div className="flex items-center justify-end mt-3">
             <button className="hover:underline">

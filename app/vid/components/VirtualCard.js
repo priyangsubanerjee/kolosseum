@@ -28,12 +28,16 @@ function VirtualCard({ tid }) {
   const VirtualCard = ({ firstName, lastName }) => {
     return (
       <div className="w-[300px] md:w-[350px] relative pointer-events-none select-none">
-        <img src="/idcard.png" className="h-full w-full" alt="" />
+        <img
+          src="/event-static/event-id-card-template.png"
+          className="h-full w-full grayscale"
+          alt=""
+        />
         <div className="absolute bottom-[70px] md:bottom-[85px] left-9 md:left-11">
           <h1 className="text-[20px] font-semibold font-poppins text-[#345969]">
-            {firstName}
+            {/* {firstName} */}
           </h1>
-          <p className="font-poppins text-neutral-600">{lastName}</p>
+          {/* <p className="font-poppins text-neutral-600">{lastName}</p> */}
         </div>
       </div>
     );
@@ -110,7 +114,7 @@ function VirtualCard({ tid }) {
             <div className="flex items-center md:justify-center relative w-full">
               <Link href="/">
                 <img
-                  src="/logo-kolosseum.png"
+                  src="/event-static/event-logo.png"
                   alt=""
                   className="h-7 md:h-8 lg:h-10"
                 />
@@ -177,7 +181,7 @@ function VirtualCard({ tid }) {
                 className="w-32 block md:hidden grayscale mx-auto"
               />
               <img
-                src="/logo-kolosseum.png"
+                src="/event-static/event-logo.png"
                 alt=""
                 className="h-10 md:h-12 mx-auto md:mx-0 mt-14 md:mt-0"
               />
