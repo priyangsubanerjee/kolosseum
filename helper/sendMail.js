@@ -31,7 +31,6 @@ export async function sendMail(
       message: "Success",
     };
   } catch (error) {
-    console.log(error.message);
     return {
       success: false,
       message: "Failure",

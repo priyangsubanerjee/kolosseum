@@ -66,7 +66,6 @@ export const GetVirtualCard = async (id) => {
         card: {},
       };
     }
-    let membersName = team.members.map((member) => member.name);
     return {
       success: true,
       message: "Team found",
@@ -78,7 +77,6 @@ export const GetVirtualCard = async (id) => {
       },
     };
   } catch (error) {
-    console.log(error.message);
     return {
       success: false,
       message: error.message,

@@ -3,7 +3,6 @@ import { sendMail } from "@/helper/sendMail";
 
 export async function POST(request) {
   const data = await request.json();
-  console.log(data.name, data.emails, data.pid);
 
   if (data.name.length > 0 && data.emails.length > 0 && data.pid.length > 0) {
     await sendMail(
