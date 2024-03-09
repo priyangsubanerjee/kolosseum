@@ -121,7 +121,7 @@ function Eventdetails() {
               <span>Contact us</span>
             </button>
           </Link>
-          <Link href={"/eventguide.pdf"}>
+          <Link target="_blank" href={"/eventguide.pdf"}>
             <button className="text-sm ml-auto text-neutral-700 hover:underline flex items-center space-x-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
