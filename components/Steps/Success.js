@@ -87,10 +87,7 @@ function Success({ uid }) {
       </div>
 
       <div className="flex items-center justify-center mt-10">
-        <Link
-          target="_blank"
-          href={`https://kolosseum.konnexions.dev/vid/${uid}`}
-        >
+        <Link target="_blank" href={`https://events.konnexions.dev/vid/${uid}`}>
           <button className="flex items-center justify-center space-x-2 boder-b bg-neutral-50 hover:bg-neutral-100 px-4 py-2 rounded-full">
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -13,26 +13,26 @@ export const viewport = {
 };
 
 export const metadata = {
-  title: "Ultimate hackathon, Kolosseum - Konnexions",
+  title: "Ultimate hackathon, Kodessphere - Konnexions",
   description:
-    "Gear up! Konnexions is back with the ultimate hackathon, Kolosseum. Brace yourself for an exhilarating journey of problem-solving, collaboration, and cutting-edge development. Whether you're a coding maestro or a budding genius, this is your chance to showcase your talent and make waves in the digital realm. Don't let this opportunity slip through your fingertips! Secure your spot now —register fast!",
+    "Gear up! Konnexions is back with the ultimate hackathon, Kodessphere. Brace yourself for an exhilarating journey of problem-solving, collaboration, and cutting-edge development. Whether you're a coding maestro or a budding genius, this is your chance to showcase your talent and make waves in the digital realm. Don't let this opportunity slip through your fingertips! Secure your spot now —register fast!",
   icons: {
     icon: "/icon.png",
   },
   openGraph: {
-    title: "Code. Collaborate. Conquer | Kolosseum",
+    title: "Code. Collaborate. Conquer | Kodessphere",
     description:
-      "Gear up! Konnexions is back with the ultimate hackathon, Kolosseum. Brace yourself for an exhilarating journey of problem-solving, collaboration, and cutting-edge development. Whether you're a coding maestro or a budding genius, this is your chance to showcase your talent and make waves in the digital realm. Don't let this opportunity slip through your fingertips! Secure your spot now —register fast!",
+      "Gear up! Konnexions is back with the ultimate hackathon, Kodessphere. Brace yourself for an exhilarating journey of problem-solving, collaboration, and cutting-edge development. Whether you're a coding maestro or a budding genius, this is your chance to showcase your talent and make waves in the digital realm. Don't let this opportunity slip through your fingertips! Secure your spot now —register fast!",
     type: "website",
     authors: ["Konnexions", "KIIT"],
     images: [
       {
-        url: "https://kolosseum.konnexions.dev/og-image-800.jpeg",
+        url: "https://events.konnexions.dev/og-image-800.jpeg",
         width: 800,
         height: 600,
       },
       {
-        url: "https://kolosseum.konnexions.dev/og-image-800.jpeg",
+        url: "https://events.konnexions.dev/og-image-800.jpeg",
         width: 1800,
         height: 1600,
       },

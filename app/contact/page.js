@@ -4,26 +4,26 @@ import Link from "next/link";
 import React from "react";
 
 export const metadata = {
-  title: "Contact us - Kolosseum",
+  title: "Contact us - Kodessphere",
   description:
-    "Gear up! Konnexions is back with the ultimate hackathon, Kolosseum. Brace yourself for an exhilarating journey of problem-solving, collaboration, and cutting-edge development. Whether you're a coding maestro or a budding genius, this is your chance to showcase your talent and make waves in the digital realm. Don't let this opportunity slip through your fingertips! Secure your spot now —register fast!",
+    "Gear up! Konnexions is back with the ultimate hackathon, Kodessphere. Brace yourself for an exhilarating journey of problem-solving, collaboration, and cutting-edge development. Whether you're a coding maestro or a budding genius, this is your chance to showcase your talent and make waves in the digital realm. Don't let this opportunity slip through your fingertips! Secure your spot now —register fast!",
   icons: {
     icon: "/icon.png",
   },
   openGraph: {
-    title: "Contact us - Kolosseum",
+    title: "Contact us - Kodessphere",
     description:
-      "Gear up! Konnexions is back with the ultimate hackathon, Kolosseum. Brace yourself for an exhilarating journey of problem-solving, collaboration, and cutting-edge development. Whether you're a coding maestro or a budding genius, this is your chance to showcase your talent and make waves in the digital realm. Don't let this opportunity slip through your fingertips! Secure your spot now —register fast!",
+      "Gear up! Konnexions is back with the ultimate hackathon, Kodessphere. Brace yourself for an exhilarating journey of problem-solving, collaboration, and cutting-edge development. Whether you're a coding maestro or a budding genius, this is your chance to showcase your talent and make waves in the digital realm. Don't let this opportunity slip through your fingertips! Secure your spot now —register fast!",
     type: "website",
     authors: ["Konnexions", "KIIT"],
     images: [
       {
-        url: "https://kolosseum.konnexions.dev/og-image-800.jpeg",
+        url: "https://events.konnexions.dev/og-image-800.jpeg",
         width: 800,
         height: 600,
       },
       {
-        url: "https://kolosseum.konnexions.dev/og-image-800.jpeg",
+        url: "https://events.konnexions.dev/og-image-800.jpeg",
         width: 1800,
         height: 1600,
       },
@@ -106,7 +106,11 @@ function ContactUs() {
     <div className="my-12 md:py-10">
       <div className="max-w-7xl mx-auto px-4">
         <Link className="mx-auto" href="/">
-          <img src="/logo-kolosseum.png" className="h-8 mx-auto" alt="" />
+          <img
+            src="/event-static/event-logo.png"
+            className="h-8 mx-auto"
+            alt=""
+          />
         </Link>
         <h1 className="text-2xl md:text-3xl font-medium text-center mt-10">
           Contact Us <span className="text-fuchsia-400">✲</span> OC Team
