@@ -30,14 +30,14 @@ function VirtualCard({ tid }) {
       <div className="w-[300px] md:w-[350px] relative pointer-events-none select-none">
         <img
           src="/event-static/event-id-card-template.png"
-          className="h-full w-full grayscale"
+          className="h-full w-full"
           alt=""
         />
         <div className="absolute bottom-[70px] md:bottom-[85px] left-9 md:left-11">
           <h1 className="text-[20px] font-semibold font-poppins text-[#345969]">
-            {/* {firstName} */}
+            {firstName}
           </h1>
-          {/* <p className="font-poppins text-neutral-600">{lastName}</p> */}
+          <p className="font-poppins text-neutral-600">{lastName}</p>
         </div>
       </div>
     );
