@@ -93,24 +93,24 @@ export const GeneralMessage = (team_name, team_id) => {
         <p style="font-weight: 400; line-height: 1.9; margin-top: 10px">
           You have successfully secured a spot. This email serves as
           confirmation of ${team_name}'s registration (Team ID: ${team_id}) for
-          Kolosseum 1.0 scheduled on March 17, 2024. We are delighted to have
+          Kodessphere 1.0 scheduled on March 17, 2024. We are delighted to have
           your team onboard and anticipate a fruitful and enjoyable event.
         </p>
 
         <a
           style="margin-top: 20px; display: block"
-          href="https://kolosseum.konnexions.dev/vid/${team_id}"
+          href="https://events.konnexions.dev/vid/${team_id}"
         >
           Get you virtual ID card here.
         </a>
 
         <a
           style="display: block; max-width: 450px; margin: 0 auto"
-          href="https://kolosseum.konnexions.dev/vid/${team_id}"
+          href="https://events.konnexions.dev/vid/${team_id}"
         >
           <img
             style="padding-top: 20px"
-            src="https://kolosseum.konnexions.dev/event-static/open-id-card-email.png"
+            src="https://events.konnexions.dev/event-static/open-id-card-email.png"
             alt=""
           />
         </a>
