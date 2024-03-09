@@ -10,7 +10,7 @@ export async function POST(request) {
       process.env.ZOHO_MAIL,
       process.env.ZOHO_PASS,
       data.emails,
-      "Konnexions Team Registration",
+      "Kolosseum Team Registration",
       GeneralMessage(data.name, data.pid)
     );
     return Response.json({
