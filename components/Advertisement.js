@@ -10,7 +10,7 @@ function Advertisement({ close }) {
     <div className="fixed inset-0 h-full w-full bg-black/60 flex items-end md:items-center md:justify-center">
       <div className="w-full min-h-[60%] max-w-[450px] h-fit bg-white pb-7 md:pb-1 md:rounded-lg">
         <div className="p-3">
-          <img src="/og-image-800.jpeg" className="rounded" alt="" />
+          <img src="/og-image-800.png" className="rounded" alt="" />
         </div>
 
         <div className="p-4 md:px-6">
