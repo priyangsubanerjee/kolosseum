@@ -171,12 +171,12 @@ function VirtualCard({ tid }) {
           <div className="fixed inset-0 h-screen w-screen bg-white flex md:items-center justify-center">
             <div className="w-[400px] md:h-[240px] px-7 py-9 bg-white rounded-lg relative">
               <img
-                src="/idcard.png"
+                src="/event-static/event-id-card-template.png"
                 alt=""
                 className="w-32 hidden md:block absolute top-0 right-0 transform grayscale"
               />
               <img
-                src="/idcard.png"
+                src="/event-static/event-id-card-template.png"
                 alt=""
                 className="w-32 block md:hidden grayscale mx-auto"
               />
