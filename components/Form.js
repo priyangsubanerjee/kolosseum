@@ -10,7 +10,7 @@ import toast from "react-hot-toast";
 import axios from "axios";
 import Success from "./Steps/Success";
 import { NotifyTeam } from "@/helper/notify";
-import { signIn, useSession } from "next-auth/react";
+import { signIn, signOut, useSession } from "next-auth/react";
 
 function Form() {
   const session = useSession();
@@ -443,6 +443,19 @@ function Form() {
                   </Button>
                 </div>
               )}
+            </div>
+            <div className="mt-32 md:mt-10">
+              <div className="flex items-center justify-center">
+                <p className="text-xs md:text-sm text-neutral-500">
+                  You are logged in as{" "}
+                  <span
+                    onClick={() => signOut()}
+                    className="px-2 py-1 rounded-small bg-neutral-100 text-neutral-700 cursor-pointer"
+                  >
+                    {session.data.user.email}
+                  </span>
+                </p>
+              </div>
             </div>
             <div className="h-44 md:hidden"></div>
           </>
