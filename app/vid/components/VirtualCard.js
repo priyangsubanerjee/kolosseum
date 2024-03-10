@@ -94,7 +94,7 @@ function VirtualCard({ tid }) {
   }, [team]);
 
   const handleShare = () => {
-    let msg = `We are team ${team.name} and we are participating in Kodessphere 2024. Join us in the biggest tech event of the year. Reserve your spot at https://events.konnexions.dev/vid/${tid}?register=true #Kodessphere2024 #TechEvent #Konnexweb #Kognizance #Kernelkombat`;
+    let msg = `We are team ${team.name} and we are participating in Kodessphere 2024. Join us in the biggest tech event of the year. Reserve your spot at https://events.konnexions.dev/vid/${tid}?register=true \n\n #Kodessphere2024 #TechEvent #Konnexweb #Kognizance #Kernelkombat`;
     try {
       navigator.share({
         title: "Kodessphere 2024",
