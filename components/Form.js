@@ -252,7 +252,7 @@ function Form() {
         toast.dismiss();
         toast.success("Registered successfully");
         await NotifyTeam(
-          `Team Name: ${formProps.teamName}%0AArena: ${formProps.arena}%0APid: ${registerRequest.data.pid}%0AParticipants: ${formProps.totalParticipants}`
+          `Team Name: ${formProps.teamName}%0AArena: ${formProps.arena}%0APid: ${registerRequest.data.pid}%0AParticipants: ${formProps.totalParticipants}%0AGmail: ${session.data.user.email}%0AName: ${session.data.user.name}`
         );
       } else {
         setIsLoading(false);
