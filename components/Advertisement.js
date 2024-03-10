@@ -12,7 +12,6 @@ function Advertisement({ close }) {
         <div className="p-3">
           <img src="/og-image-800.png" className="rounded" alt="" />
         </div>
-
         <div className="p-4 md:px-6">
           <h1 className="font-medium text-xl text-center">
             Fasten your seatbelts 🥳
