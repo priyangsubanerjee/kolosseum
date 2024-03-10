@@ -10,6 +10,7 @@ export const RegisterTeam = async (teamProp) => {
         apiToken: teamProp.apiToken,
         partipantsCount: teamProp.totalParticipants,
         members: teamProp.members,
+        gmail: teamProp.gmail,
       },
     });
     return {

@@ -15,6 +15,7 @@
     "framer-motion": "^11.0.8",
     "html2canvas": "^1.4.1",
     "next": "14.1.1",
+    "next-auth": "^4.24.7",
     "nodemailer": "^6.9.11",
     "prisma": "^5.10.2",
     "random-string-generator": "^1.0.1",

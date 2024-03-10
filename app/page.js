@@ -1,7 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
+
 import Eventdetails from "@/components/Eventdetails";
 import Form from "@/components/Form";
 import { Button } from "@nextui-org/react";
+import { useSession } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
 

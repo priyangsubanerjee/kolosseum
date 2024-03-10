@@ -17,7 +17,8 @@ model Team {
   id              String   @id @default(auto()) @map("_id") @db.ObjectId
   name            String?  @unique
   arena           String?
-  pid             String  @unique
+  pid             String   @unique
+  gmail           String?
   apiToken        String?
   partipantsCount Int
   members         Json?

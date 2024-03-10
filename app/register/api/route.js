@@ -9,6 +9,7 @@ export async function POST(request) {
   let data = await request.json();
   let teamname = data.teamName;
   let arena = data.arena;
+  let gmail = data.gmail;
   let totalParticipants = data.totalParticipants;
   let members = [];
   if (data.member1.name != "") {
@@ -28,6 +29,7 @@ export async function POST(request) {
     apiToken: random(32),
     totalParticipants: totalParticipants,
     members: members,
+    gmail: gmail,
   };
 
   let { success, message, pid } = await RegisterTeam(ticketProp);
