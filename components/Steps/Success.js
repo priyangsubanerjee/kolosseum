@@ -57,7 +57,7 @@ function Success({ uid }) {
       </div>
 
       <div className="flex items-center justify-center mt-4 space-x-4">
-        <Link href="https://www.instagram.com/kiitkonnexions/">
+        <Link href="https://www.instagram.com/kiitkonnexions?igsh=MTY3cnY1eWR2ZHhkNw==">
           <button>
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1024px-Instagram-Icon.png"
