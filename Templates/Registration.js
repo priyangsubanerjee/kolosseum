@@ -117,7 +117,7 @@ export const GeneralMessage = (team_name, team_id) => {
 
         <p style="font-weight: 400; line-height: 1.9; margin-top: 20px">
           Kindly retain the Team ID (${team_id}) for all future correspondence
-          concerning the event.Let's make this event one to remember!
+          concerning the event. Let's make this event one to remember!
         </p>
 
         <p style="margin-top: 29px; font-weight: 400">
