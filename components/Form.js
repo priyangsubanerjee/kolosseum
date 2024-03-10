@@ -1,5 +1,12 @@
 "use client";
-import { Button, Input, Skeleton, Spacer, Spinner } from "@nextui-org/react";
+import {
+  Button,
+  Input,
+  Skeleton,
+  Spacer,
+  Spinner,
+  Tooltip,
+} from "@nextui-org/react";
 import React, { useEffect } from "react";
 import Teamname from "./Steps/Teamname";
 import Member1 from "./Steps/Member1";
@@ -448,12 +455,14 @@ function Form() {
               <div className="flex items-center justify-center">
                 <p className="text-xs md:text-sm text-neutral-500">
                   You are logged in as{" "}
-                  <span
-                    onClick={() => signOut()}
-                    className="px-2 py-1 rounded-small bg-neutral-100 text-neutral-700 cursor-pointer"
-                  >
-                    {session.data.user.email}
-                  </span>
+                  <Tooltip content="Logout">
+                    <button
+                      onClick={() => signOut()}
+                      className="px-2 py-1 rounded-small bg-neutral-100 text-neutral-700 cursor-pointer"
+                    >
+                      {session.data.user.email}
+                    </button>
+                  </Tooltip>
                 </p>
               </div>
             </div>
@@ -499,6 +508,7 @@ function Form() {
               <h2 className="text-sm mt-6 leading-7">
                 To register, please sign in with your KIIT gmail account
               </h2>
+
               <Button
                 className="mt-5 w-full md:w-fit"
                 onClick={() => signIn("google")}
