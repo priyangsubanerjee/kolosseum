@@ -74,7 +74,7 @@ function Eventdetails() {
                 />
               </g>
             </svg>
-            <p className="text-sm ml-2">17th march, 2023</p>
+            <p className="text-sm ml-2">17th march, 2024</p>
           </div>
           <div className="flex items-center mt-6">
             <svg
