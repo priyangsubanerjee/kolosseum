@@ -315,12 +315,12 @@ function Form() {
               </h1>
               <Button
                 onClick={() => {
-                  toast.error("Login window opens soon");
+                  toast.error("Dashboard window opens soon");
                 }}
                 className="text-neutral-900 absolute top-0 md:static -translate-y-1/2 md:-translate-x-0 md:translate-y-0 left-1/2 -translate-x-1/2 bg-neutral-200 rounded-full hover:underline text-sm flex items-center ml-auto"
               >
                 <div className="flex items-center px-3">
-                  <span className="mr-1">Login</span>
+                  <span className="mr-1">Dashboard</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="23"
