@@ -148,7 +148,7 @@ function VirtualCard({ tid }) {
             </div>
             <div className="w-full h-full bg-white gap-y-10 md:gap-y-10 md:gap-x-6 flex flex-wrap justify-center mx-auto md:mt-10 mt-12 lg:mt-20 relative">
               {team.members.map((member, index) => {
-                let name = member.split(" ");
+                let name = member.trim().split(" ");
                 let firstName = name[0];
                 let lastName = name.length > 1 ? name[name.length - 1] : "";
                 return (
