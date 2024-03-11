@@ -28,8 +28,8 @@ function Member3({ formProps, setFormProps }) {
             ...formProps,
             member3: {
               ...formProps.member3,
-              roll: e.target.value,
-              email: `${e.target.value}@kiit.ac.in`,
+              roll: e.target.value.trimEnd(),
+              email: `${e.target.value.trimEnd()}@kiit.ac.in`,
             },
           })
         }

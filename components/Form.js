@@ -223,6 +223,25 @@ function Form() {
     }
   };
 
+  const TrimFields = () => {
+    let formPropsCopy = { ...formProps };
+    formPropsCopy.teamName = formPropsCopy.teamName.trim();
+    formPropsCopy.arena = formPropsCopy.arena.trim();
+    formPropsCopy.member1.name = formPropsCopy.member1.name.trim();
+    formPropsCopy.member1.roll = formPropsCopy.member1.roll.trim();
+    formPropsCopy.member1.email = formPropsCopy.member1.email.trim();
+    formPropsCopy.member1.phone = formPropsCopy.member1.phone.trim();
+    formPropsCopy.member2.name = formPropsCopy.member2.name.trim();
+    formPropsCopy.member2.roll = formPropsCopy.member2.roll.trim();
+    formPropsCopy.member2.email = formPropsCopy.member2.email.trim();
+    formPropsCopy.member2.phone = formPropsCopy.member2.phone.trim();
+    formPropsCopy.member3.name = formPropsCopy.member3.name.trim();
+    formPropsCopy.member3.roll = formPropsCopy.member3.roll.trim();
+    formPropsCopy.member3.email = formPropsCopy.member3.email.trim();
+    formPropsCopy.member3.phone = formPropsCopy.member3.phone.trim();
+    return formPropsCopy;
+  };
+
   const handleSubmit = async () => {
     toast.loading("Submitting...");
     setIsLoading(true);
@@ -230,7 +249,7 @@ function Form() {
     let checkUniqueName = await axios.post(
       "/register/api/unique-name",
       {
-        name: formProps.teamName,
+        name: formProps.teamName.trim(),
       },
       {
         headers: {
@@ -243,8 +262,8 @@ function Form() {
       let registerRequest = await axios.post(
         "/register/api",
         {
-          ...formProps,
-          gmail: session.data.user.email,
+          ...TrimFields(),
+          gmail: session.data.user.email.trim(),
         },
         {
           headers: {

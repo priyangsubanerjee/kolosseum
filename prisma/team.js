@@ -4,7 +4,7 @@ export const RegisterTeam = async (teamProp) => {
   try {
     await prisma.team.create({
       data: {
-        name: teamProp.teamName,
+        name: teamProp.teamName.trim(),
         arena: teamProp.arena,
         pid: teamProp.pid,
         apiToken: teamProp.apiToken,
