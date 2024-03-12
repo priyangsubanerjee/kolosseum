@@ -38,7 +38,7 @@ function Form() {
   const [uid, setUid] = React.useState("");
   const [isLoading, setIsLoading] = React.useState(false);
   const [registeredTeams, setRegisteredTeams] = React.useState(null);
-  const [userAgent, setUserAgent] = React.useState(null);
+  const [userAgentWarning, setUserAgentWarning] = React.useState(null);
 
   const [formProps, setFormProps] = React.useState({
     teamName: "",
@@ -308,7 +308,10 @@ function Form() {
   }, []);
 
   useEffect(() => {
-    setUserAgent(window.navigator.userAgent);
+    let userAgent = window.navigator.userAgent;
+    if (userAgent.includes("Instagram")) {
+      setUserAgentWarning(true);
+    }
   }, []);
 
   return (
@@ -544,7 +547,48 @@ function Form() {
           </>
         )}
       </div>
-      <span className="text-sm">{userAgent}</span>
+
+      {userAgentWarning && (
+        <div className="fixed inset-0 h-full w-full bg-black/50 flex items-center justify-center">
+          <div className="w-[500px] bg-white rounded-xl">
+            <div className="p-6">
+              <div className="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.55"
+                    d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2zm-9-8v2m0 4h.01"
+                  />
+                </svg>
+                <h1 className="text-xl font-semibold ml-2">
+                  Unsupported browser
+                </h1>
+              </div>
+              <p className="mt-3 leading-8 text-sm text-neutral-700">
+                We are sorry, but we do not support Instagram&apos;s in-app
+                browser. Please open the link in your default browser.
+              </p>
+            </div>
+            <div className="flex items-center justify-end p-6">
+              <Button
+                onClick={() => {
+                  setUserAgentWarning(false);
+                }}
+              >
+                Close
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
