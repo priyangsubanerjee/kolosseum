@@ -550,7 +550,7 @@ function Form() {
 
       {userAgentWarning && (
         <div className="fixed inset-0 h-full w-full bg-black/50 flex items-center justify-center">
-          <div className="w-[500px] bg-white rounded-xl">
+          <div className="w-[95%] md:w-[500px] bg-white rounded-xl">
             <div className="p-6">
               <div className="flex items-center">
                 <svg
