@@ -38,6 +38,7 @@ function Form() {
   const [uid, setUid] = React.useState("");
   const [isLoading, setIsLoading] = React.useState(false);
   const [registeredTeams, setRegisteredTeams] = React.useState(null);
+  const [userAgent, setUserAgent] = React.useState(null);
 
   const [formProps, setFormProps] = React.useState({
     teamName: "",
@@ -306,6 +307,10 @@ function Form() {
     UpdateRegisteredTeamCount();
   }, []);
 
+  useEffect(() => {
+    setUserAgent(window.navigator.userAgent);
+  }, []);
+
   return (
     <div className="w-full md:w-full h-full relative md:h-fit">
       <div
@@ -529,6 +534,7 @@ function Form() {
               </h2>
 
               <Button
+                isLoading={session.status === "loading"}
                 className="mt-5 w-full md:w-fit"
                 onClick={() => signIn("google")}
               >
@@ -538,6 +544,7 @@ function Form() {
           </>
         )}
       </div>
+      <span className="text-sm">{userAgent}</span>
     </div>
   );
 }
