@@ -493,6 +493,7 @@ function Form() {
                 </p>
               </div>
             </div>
+
             <div className="h-44 md:hidden"></div>
           </>
         ) : (
@@ -532,9 +533,13 @@ function Form() {
                 </h1>
               </div>
 
-              <h2 className="text-sm mt-6 leading-7">
+              <p className="text-sm mt-6 leading-7">
                 To register, please sign in with your KIIT gmail account
-              </h2>
+              </p>
+
+              <p className="text-sm px-3 py-1 mt-4 rounded-full bg-yellow-50 text-yellow-800 w-fit">
+                Only 1 team member needs to register the team.
+              </p>
 
               <Button
                 isLoading={session.status === "loading"}
