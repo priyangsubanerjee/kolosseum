@@ -2,6 +2,7 @@ import { GetTeamCount } from "@/prisma/team";
 
 export async function GET() {
   let { success, message, count } = await GetTeamCount();
+  console.log("Team count: ", count);
   return Response.json({
     success: success,
     message: message,

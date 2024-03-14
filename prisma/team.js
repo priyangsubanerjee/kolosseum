@@ -88,11 +88,11 @@ export const GetVirtualCard = async (id) => {
 
 export const GetTeamCount = async () => {
   try {
-    const count = await prisma.team.count();
+    const count = await prisma.team.findMany();
     return {
       success: true,
       message: "Team count found",
-      count: count,
+      count: count.length,
     };
   } catch (error) {
     return {
