@@ -130,6 +130,7 @@ export const GetTeamList = async () => {
       select: {
         name: true,
         pid: true,
+        arena: true,
         partipantsCount: true,
         members: true,
         createdAt: true,
