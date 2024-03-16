@@ -386,7 +386,7 @@ function Form() {
                   Goodies & giveaways
                 </span>
               </div>
-              <div className="hidden">
+              <div className="">
                 <div className="mt-16">
                   {step < 5 && (
                     <>
@@ -499,7 +499,7 @@ function Form() {
                 </div>
               </div>
 
-              <div className="flex items-center justify-center">
+              <div className="hidden items-center justify-center">
                 <img
                   src="https://www.steelmintevents.com/wp-content/uploads/2023/03/Untitled-1.png"
                   className="w-56 md:w-64 mt-12 object-contain"
