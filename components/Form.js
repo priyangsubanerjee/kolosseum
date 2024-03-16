@@ -284,7 +284,7 @@ function Form() {
       } else {
         setIsLoading(false);
         toast.dismiss();
-        toast.error("Failed to register");
+        toast.error(registerRequest.data.message);
       }
     } else {
       toast.dismiss();
