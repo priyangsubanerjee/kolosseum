@@ -8,10 +8,10 @@ import { getServerSession } from "next-auth/next";
 
 export async function POST(request) {
   let session = await getServerSession({ req: request });
-  //   return Response.json({
-  //     success: false,
-  //     message: "Registrations are closed.",
-  //   });
+  return Response.json({
+    success: false,
+    message: "Registrations are closed.",
+  });
   if (session) {
     let data = await request.json();
     let teamname = data.teamName;
