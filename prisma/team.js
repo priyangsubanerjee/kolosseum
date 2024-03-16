@@ -132,6 +132,7 @@ export const GetTeamList = async () => {
         pid: true,
         partipantsCount: true,
         members: true,
+        createdAt: true,
       },
     });
     return {
