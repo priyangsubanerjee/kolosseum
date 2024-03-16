@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import {
   Button,
@@ -500,7 +501,7 @@ function Form() {
               </div>
               <div className="h-44 md:hidden"></div>
 
-              <div className="absolute inset-0 bg-white/80 z-20 flex items-center justify-center">
+              <div className="absolute inset-0 bg-white/80 pointer-events-none select-none z-20 flex items-center justify-center">
                 <img
                   src="https://www.steelmintevents.com/wp-content/uploads/2023/03/Untitled-1.png"
                   className="h-44"
