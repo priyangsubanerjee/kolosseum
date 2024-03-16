@@ -123,3 +123,27 @@ export const GetMembersCount = async () => {
     count: total,
   };
 };
+
+export const GetTeamList = async () => {
+  try {
+    const teams = await prisma.team.findMany({
+      select: {
+        name: true,
+        pid: true,
+        partipantsCount: true,
+        members: true,
+      },
+    });
+    return {
+      success: true,
+      message: "Teams found",
+      teams: teams,
+    };
+  } catch (error) {
+    return {
+      success: false,
+      message: error.message,
+      teams: [],
+    };
+  }
+};
