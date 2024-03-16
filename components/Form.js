@@ -500,10 +500,12 @@ function Form() {
               </div>
               <div className="h-44 md:hidden"></div>
 
-              <div className="absolute inset-0 bg-white/60 z-20 flex items-center justify-center">
-                <div className="bg-white p-4 rounded-lg">
-                  <h1>Registrations are closed.</h1>
-                </div>
+              <div className="absolute inset-0 bg-white/80 z-20 flex items-center justify-center">
+                <img
+                  src="https://www.steelmintevents.com/wp-content/uploads/2023/03/Untitled-1.png"
+                  className="h-44"
+                  alt=""
+                />
               </div>
             </div>
           </>
