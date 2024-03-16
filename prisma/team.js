@@ -102,3 +102,24 @@ export const GetTeamCount = async () => {
     };
   }
 };
+
+export const GetMembersCount = async () => {
+  let twoMembers = await prisma.team.findMany({
+    where: {
+      partipantsCount: 2,
+    },
+  });
+  let threeMembers = await prisma.team.findMany({
+    where: {
+      partipantsCount: 3,
+    },
+  });
+
+  let total = twoMembers.length * 2 + threeMembers.length * 3;
+
+  return {
+    success: true,
+    message: "Members count found",
+    count: total,
+  };
+};
