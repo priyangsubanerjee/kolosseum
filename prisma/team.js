@@ -133,6 +133,7 @@ export const GetTeamList = async () => {
         partipantsCount: true,
         members: true,
         createdAt: true,
+        gmail: true,
       },
     });
     return {
