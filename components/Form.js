@@ -19,9 +19,11 @@ import axios from "axios";
 import Success from "./Steps/Success";
 import { NotifyTeam } from "@/helper/notify";
 import { signIn, signOut, useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 function Form() {
   const session = useSession();
+  const router = useRouter();
   const lastDate = new Date("2024-03-16T23:59:59");
   let today = new Date();
   //   let differenceInDays = Math.floor(
@@ -349,7 +351,7 @@ function Form() {
                 </h1>
                 <Button
                   onClick={() => {
-                    toast.error("Dashboard window opens soon");
+                    router.push("https://kdss.konnexions.dev/");
                   }}
                   className="text-neutral-900 absolute top-0 md:static -translate-y-1/2 md:-translate-x-0 md:translate-y-0 left-1/2 -translate-x-1/2 bg-neutral-200 rounded-full hover:underline text-sm flex items-center ml-auto"
                 >
