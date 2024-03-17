@@ -24,9 +24,10 @@ function Form() {
   const session = useSession();
   const lastDate = new Date("2024-03-16T23:59:59");
   let today = new Date();
-  let differenceInDays = Math.floor(
-    (lastDate.getTime() - today.getTime()) / (1000 * 3600 * 24)
-  );
+  //   let differenceInDays = Math.floor(
+  //     (lastDate.getTime() - today.getTime()) / (1000 * 3600 * 24)
+  //   );
+
   const stepLabels = [
     "Team details",
     "Member 1",
@@ -370,7 +371,7 @@ function Form() {
               </div>
               <div className="flex flex-wrap items-center mt-4 gap-3">
                 <span className="bg-neutral-50 py-2 text-xs px-4 rounded-full">
-                  Closing in {differenceInDays} days
+                  Regitrations closed
                 </span>
                 <div className="bg-sky-50 py-2 text-xs px-4 rounded-full flex items-center relative">
                   {registeredTeams} teams registered
